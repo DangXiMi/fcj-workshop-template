@@ -7,239 +7,236 @@ pre: " <b> 4.2. </b> "
 ---
 
 
-
 ### Event Objectives
 
-- Provide Swinburne Vietnam students with real-world insights into cloud computing and enterprise architectures
-- Bridge the gap between academic learning and industry practice
-- Share perspectives on career opportunities, skill gaps, and AI's impact on the job market
-- Present practical experiences from cloud engineers, data engineers, and solution architects
+- Showcase real-world AI agent applications across multiple domains
+- Provide hands-on technical insights from industry practitioners
+- Foster community learning and networking
+- Demonstrate AWS services in production (Amazon Q, Bedrock, DevOps Agent, Voice AI)
+- Highlight the intersection of AI, business, and enterprise needs
 
 ### Speakers
 
-- **Nguyễn Trần Minh Duy** – Industry Liaison Officer, Swinburne Vietnam (Host)
-- **Nguyễn Gia Hưng** – Head of Solution Architect, Amazon Web Services Vietnam (Keynote)
-- **Bành Cẩm Vĩnh** – Data Engineer, Renova Cloud; AWS Community Builder
-- **Như Trần** – Account Manager, Amazon Web Services Vietnam
-- **Khang Nguyễn** – Solution Architect, Cloud Kinetics; Swinburne Alumni
+- **Steve Trần** – Founder, Cloud Thinker
+- **Hiếu Nghị** – Renova Cloud (Voice AI Session)
+- **Kiệt** – Student Builder (Voice AI Demo)
+- **Trung** – Founder & CEO, R AI
+- **Bảo** – Cloud Engineer, Cloud Kinetics (DevOps Agent)
+- **Nguyên** – Cloud Engineer, Cloud Kinetics (DevOps Agent)
+- **Trường** – AI Solution Architect, Noventis (Amazon Q & HR)
+- **Minh Anh** – Solution Architect, Noventis (Amazon Q & HR)
+- **Toàn Nguyễn** – AWS Security Builder (Amazon Q Security)
+- **Nghị** – Renova Cloud (Amazon Q Security)
 
 ### Key Highlights
 
-#### Opening Remarks (Nguyễn Trần Minh Duy)
+#### Session 1: Cloud Operations & AI (Steve Trần – Cloud Thinker)
 
-- Collaboration between AWS and Swinburne Vietnam – third annual study tour
-- Students from Swinburne Vietnam (Ho Chi Minh and Can Tho campuses) attended
-- Connection to **First Cloud AI Journey** community, fostering knowledge sharing and mentorship
-- Emphasized the "forward" spirit: alumni return to guide current students
+**Career Journey & Market Insights:**
+- Started in IT during COVID era; cloud demand was explosive
+- Recognized cloud as a high-growth market early and pivoted
+- AI is shifting demand from junior developers to senior engineers who can effectively use AI tools
+- Current enterprise challenge: **complexity** – legacy systems, multi-cloud, and lack of DevOps talent
 
-#### Keynote: Cloud Market & Career Trends (Nguyễn Gia Hưng)
+**Cloud Thinker's Platform:**
+- Solves operational pain points using **agentic AI**:
+  - **Incident Management**: AI investigates root causes minutes vs. hours
+  - **Quality Control**: AI reviews infrastructure changes before production to reduce defects
+  - **Cost Optimization**: AI continuously monitors and suggests optimizations – many clients have shifted FinOps tasks to AI
+  - **Security**: Built-in penetration testing and compliance assessment
 
-**Cloud Adoption in Vietnam:**
-- AWS revenue in Vietnam grew **20x in 6 years**; traditional hardware market shrank 10x
-- Cloud-first strategy is now standard for enterprises – only workloads like CCTV remain on-premises
-- Major industries adopting AWS: Banking, Financial Services, Retail, Manufacturing, FMCG, Telecom
-- AWS invested heavily in local infrastructure: **Local Zones** in Hanoi and HCMC, CDN nodes
-- Global talent hubs: Vietnam hosts 30% of National Australia Bank's (NAB) global IT workforce – more than India
+**Key Architectural Decisions:**
+- **Multi-agent vs. Single Agent**: Debate between specialist agents and a single super-agent
+  - Multi-agent allows for more focused contexts, better cost control, and role-based access
+  - Single agent can do 95% of tasks, but with higher costs and hallucination risks
+  - Cloud Thinker uses **multi-agent architecture** for better handling of enterprise complexity
 
-**Career Reality & Skill Gaps:**
-- Interns now expected to know **Kubernetes**, **Containerization**, and cloud-native technologies
-- 90% of jobs are filled via internal referrals, not public job postings
-- AI is raising the bar; entry-level positions require 3–4 years of equivalent experience
-- **Skill gap**: Companies demand immediate contribution from juniors; no time for ramp-up
-- **Visibility matters**: Success = Capability × Visibility × Consistency
+**Challenges for Startups:**
+- Selling to enterprises requires changing 50% of their processes
+- Need **champion customers** (e.g., F88, FPT) to validate product-market fit
+- Build a **fully managed service** to educate and support enterprise transitions
+- Expect to spend 10x more effort on enterprise onboarding than on SaaS delivery
 
-**Industry Focus:**
-- Choose an industry (e.g., Banking, Retail, Fintech) alongside technical roles – adds differentiation
-- Encourage students to build projects that solve industry-specific pain points
+**Takeaway:** Focus on real problems; work fast, iterate, and find customers early.
 
-**The LED Analogy:**
-- AI, like LED bulbs, reduces cost per unit, but total consumption increases because more is used
-- Software becomes cheaper, leading to more software and more jobs overall – though junior roles may shrink while senior roles grow
+#### Session 2: Voice AI – Enabling Vietnamese Speech Agents (Hiếu Nghị, Kiệt, Trung)
 
-**AWS's Commitment to Vietnam:**
-- Investment in local talent (99% Vietnamese staff), infrastructure (data center > $6B investment), and community programs (First Cloud AI Journey)
-- AWS aims to build a sustainable builder community, not just sell licenses
+**Voice AI Landscape:**
+- Speech-to-speech models are mostly English-only – Vietnamese is a **low-resource language**
+- Current approach in Vietnam: **STT → LLM → TTS** pipeline (separate components)
+- This enables control, tool calling, and Vietnamese language support
 
-**Mental Models for Success:**
-- **Teamwork**, **Building**, **Problem-solving**, **Resilience**, **Invest in yourself**, **Lifelong learning**
-- Treat your boss and customers like your loved ones – communication and relationship skills matter
+**Components:**
+- **STT (Speech-to-Text)**: Convert voice to text – custom-trained for Vietnamese accents
+- **LLM**: Handles reasoning, context, tool calling – works well with Vietnamese
+- **TTS (Text-to-Speech)**: Convert response back to voice – can be customized for different accents/use cases
 
-#### Data Engineering: Academia vs. Industry (Bành Cẩm Vĩnh)
+**Challenges for Vietnamese Voice AI:**
+- **Accent handling**: Training data includes 10-20% regional accents (Northern, Central, Southern)
+- **Gender detection**: Vietnamese requires proper pronoun usage (anh/chị) – models must detect speaker gender
+- **Interruption handling**: Models must decide when to speak and when to listen – requires additional training
+- **Latency**: End-to-end streaming is critical for natural conversation
 
-**Foundation Courses (Recommended for all IT students):**
-- Database Systems
-- Programming Languages
-- Data Structures & Algorithms
-- Distributed Databases
-- APIs/Integration
+**Enterprise Features:**
+- **Self-service prompt management** for business users (non-technical)
+- **Versioning and audit logs** for compliance (like GitHub)
+- **Knowledge base** integration for domain-specific answers
+- **Human handoff**: Seamless transfer from AI to human when AI cannot handle the query
+- **Voice personalization**: Use case-specific voices (e.g., debt collection may use regional accent for better engagement)
 
-**Key Differences – School vs. Real World:**
+**Live Demo:**
+- Quick Agent built on **AWS Bedrock** with **Knowledge Base** for Apple product support
+- Answered questions about MacBook Pro – speech-to-speech in English (later clarified that Vietnamese support is under development)
 
-| Aspect | School | Industry |
-|--------|--------|----------|
-| Data | Clean, small, static | Dirty, massive, streaming from multiple sources |
-| Requirements | Clearly defined, stable | Vague, constantly changing |
-| Timeline | Flexible (weeks/months) | Urgent (days/hours) |
-| Accountability | Low (grade impact only) | High (production impact, revenue loss) |
-| Team | Small, known peers | Cross-functional with multiple departments |
+**Takeaway:** Voice AI in Vietnamese is a growing field; focus on the pipeline approach for control and reliability.
 
-**90% of real data engineering work is not about coding:**
-- Handling failures, retries, data quality, security, compliance, cost optimization
-- Building for production requires thinking beyond the happy path
+#### Session 3: DevOps Agent – Intelligent Incident Management (Bảo & Nguyên – Cloud Kinetics)
 
-**One Framework for Every Platform (Data Engineering DNA):**
-- **Injection** → **Processing** → **Storage** → **Governance** → **Catalog** → **Analytics**
-- Skills transfer across tools; focus on understanding the components, not just the specific service
+**Problem Statement:**
+- Manual troubleshooting is fragmented: logs in multiple places, knowledge silos, constant interruptions
+- MTTR (Mean Time to Resolution) is too high due to lack of context
 
-**Career Journey (5 years):**
-- **Startup (Sieuviet Group):** Built everything from scratch – learned ownership and full-stack data engineering
-- **Enterprise (Heineken Vietnam):** Focused on business value, stakeholder communication, defining requirements (e.g., "active user" means different things to different departments)
-- **Fintech (ZaloPay – VNG):** High-scale, high-availability – learned to design for growth and failure
-- **Consulting (Renova Cloud):** Advising clients on architecture and tool selection – start with the business problem, not the tool
+**Solution – AWS DevOps Agent (Amazon DevOps Guru? but they called it "DevOps Agent" or "DevOps AI Agent" – actually it's a new service, likely Amazon DevOps Guru or a similar agent)**
 
-**What AI Can and Cannot Replace:**
-- AI can write code, but cannot understand business context or make architectural decisions
-- Critical skills: **Architecture thinking**, **Business understanding**, **Communication**, **Decision-making**
-- Use AI to amplify your skills, not replace your thinking
+**Six Core Capabilities:**
+1. **Context Learning**: Agent builds a topology of your entire infrastructure (AWS, on-prem, Azure) – learns relationships and dependencies
+2. **Control**: Full RBAC – agent can be restricted to specific resources via tags and IAM policies
+3. **Integration**: Extensible via MCP (Model Context Protocol) – connect to any data source (logs, databases, custom tools)
+4. **Collaboration**: Users can chat, get recommendations, and escalate to ticketing systems (ServiceNow, Slack)
+5. **Convenience**: One-click setup via AWS Console; web-based chat interface
+6. **Cost-Effective**: Priced per second ($0.083/second), not per token – predictable billing
 
-**Bonus Lessons:**
-- **Connect the dots** – every experience, failure or success, builds your career
-- **Perseverance** – keep applying even when rejected
-- **Growth mindset** – be open to learning from everyone
+**How It Works (4 Steps):**
+1. **Trigger**: Alert (CloudWatch) or user-initiated investigation
+2. **Investigation**: Agent analyzes logs, metrics, traces, and topology to generate hypotheses
+3. **Mitigation**: Suggests remediation steps (not auto-executes – safety first)
+4. **Improvement**: Proposes long-term fixes (e.g., add caching, scale resources)
 
-#### Overcoming Fears: Opportunities and Visibility (Như Trần)
+**Live Demo:**
+- Simulated DDoS attack on an e-commerce app (ECS + ALB)
+- Agent detected high latency, investigated, identified 10 ECS tasks generating 1000 req/sec, and provided a mitigation plan (stop tasks, scale down)
+- Agent also generated a root cause analysis with actionable commands (copy-paste into terminal)
+- After applying fixes, app returned to normal
 
-**Common Fears Among Students:**
-- Fear of being wrong (rooted in school's correctness-focused grading)
-- Fear of public speaking and judgment
-- Fear of disappointing parents
+**Success Metrics (from customer cases):**
+- University (200k students): Reduced MTTR from 2 hours to 28 minutes (-77%)
+- Zenchef (restaurant platform): Found misconfiguration in 20 minutes (-75% vs manual)
+- KDDI (Japanese telecom): Reduced investigation from weeks to days
 
-**Reframing Fear:**
-- Fear of being wrong is actually fear of consequences – separate the two
-- Public speaking is a skill; practice by volunteering, regardless of how you feel
+**Prerequisites for Success:**
+- Good observability: comprehensive logs, metrics, and alarms
+- Large-scale systems: more value in complex environments
+- Human-in-the-loop: agent recommends, human executes
 
-**Dealing with Parents' Expectations:**
-- Have honest conversations – often parents just want you to be happy and stable
-- Their expectation is not the same as your perceived pressure
+**Takeaway:** DevOps Agent is a force multiplier for SRE/DevOps teams; it doesn't replace skills but amplifies them.
 
-**Communication Tips:**
-- Miscommunication is natural; it's a two-way problem
-- Approach your boss with solutions, not just problems (e.g., "I missed this KPI, here's my plan to fix it")
-- Small talk with leaders (e.g., "Good morning, how was your weekend?") increases visibility
+#### Session 4: Amazon Q – AI for HR and Talent Management (Trường & Minh Anh – Noventis)
 
-**The Opportunity Mindset:**
-- Opportunities are not just job postings; they often come through relationships
-- **Red Ocean vs. Blue Ocean**: Find niches with less competition
-- Personal story: Rejected 10+ times by Amazon, finally got in through a referral and persistence
-- The 11th attempt mattered – only one success is needed
-- Be "coachable" – show that you can learn and adapt
+**HR Pain Points in the AI Era:**
+- Manual CV screening is time-consuming and error-prone – often misses key talent
+- No standardized framework for evaluating candidates across roles
+- Data privacy concerns when using public AI tools (exposure of sensitive HR data)
+- High cost of wrong hiring: delays, low team performance, employee churn
 
-**Takeaway:** Opportunities are everywhere; sow seeds of connection and effort. You never know which will grow.
+**Amazon Q – An Agentic AI Assistant:**
+- **Customizable Agents**: Build skills for specific tasks (e.g., Talent Review Assistant)
+- **Multi-source Research**: Queries internal documents, websites, and structured data
+- **Automated Business Intelligence**: Natural language queries over datasets – no SQL needed
+- **Flow Automation**: Automate repetitive workflows (email, scheduling, approvals)
 
-#### AI, Skills, and Career for Students (Khang Nguyễn – Solution Architect, Cloud Kinetics)
+**Data Integration:**
+- Connects to Microsoft (SharePoint, Outlook, OneDrive) and Google Workspace (Gmail, Drive)
+- Can connect to any system via custom MCP connectors
+- Data stays in AWS – secure, compliant (already has local zone in Vietnam)
 
-**From Student to Professional:**
-- Graduated from Swinburne with only 4 classmates – had unique access to faculty
-- Advise students to go beyond the curriculum: learn the "why" behind concepts, not just the "what"
+**HR Use Case Demo:**
+1. **Create Skill**: Upload an MD file describing the HR talent review process – Q builds a skill automatically
+2. **Generate Job Description**: Ask Q to create a JD for "Junior Cloud Engineer" – it generates a complete JD
+3. **Screen CVs**: Upload a folder of CVs; Q ranks candidates against the JD with scores (Strong, Good, Low, Very Low)
+4. **Generate Report**: Q creates a visual dashboard showing candidate scores, strengths, and recommendations
+5. **Action**: Q can send emails, schedule interviews, and update tracking systems via automation
 
-**The AI Trap:**
-- Students using AI to complete assignments without understanding are common; 90% of test submissions are AI-generated but lack depth
-- **You can outsource your thinking, but you cannot outsource your understanding**
-- AI amplifies your foundation – if your foundation is weak, AI leads you down the wrong path
+**Results:**
+- Reduced screening time from days to minutes
+- Standardized evaluation across all candidates
+- Enabled HR to focus on strategic decisions
 
-**The Right Mindset for Learning:**
-- **Question everything** – ask "why" repeatedly to build deep understanding
-- **Embrace mistakes** – failure is cheap in school, expensive at work
-- **Stay hungry** – exceed the syllabus; explore beyond the course requirements
-- **Integrity** – if you know you can improve a project beyond the rubric, do it – it differentiates your CV
+**Security Integration (Toàn & Nghị session):**
+- **Private connectivity**: Use **VPC Interface Endpoint** for Amazon Q to connect to MCP servers without exposing them to the internet
+- **Benefits**: No public IP, no risk of MITM attacks, data stays within VPC, meets compliance (e.g., data residency)
+- **Cost estimate**: ~$250–350/month for private setup (includes Route53 Resolver, ALB, EC2, data transfer)
 
-**Career Considerations:**
-- A job is a balance of **Passion**, **Responsibility**, and **Benefit** – ensure all three are present
-- The first job may not pay the most, but it should provide experience, network, knowledge, and personal growth
-- **Time is your ally** – don't rush; plan long-term
-
-**Hiring Criteria (from a leader's perspective):**
-1. **Attitude** – most important
-2. **Competence** – technical skills
-3. **Experience** – years of work
-4. **Exposure** – variety of roles and projects
-5. **Talent** – innate abilities
-
-**Advice:**
-- Build projects beyond academic requirements – those extra 10% matter in interviews
-- Form teams across disciplines (tech, business, marketing) to see different perspectives
-- Participate in hackathons and community events – they build exposure and network
-- Stay consistent – learning is a marathon, not a sprint
-
-**Closing Thought:**
-> "Luck is not something that happens to you; it is created by taking action. The more you act, the luckier you get."
+**Takeaway:** Amazon Q democratizes AI for non-technical teams – HR, Finance, and Operations can now use AI securely and effectively.
 
 ### Key Takeaways
 
 #### Business Perspective
 
-- Cloud adoption is irreversible; enterprises are investing billions in infrastructure and talent
-- Vietnamese talent is globally competitive; NAB's Vietnam hub has more IT staff than India
-- Jobs are secured through referrals and community, not just public job boards
-- Choose an industry focus alongside technical skills – it differentiates your profile
-- The role of AI is to amplify human capabilities, not replace them – demand for senior talent is increasing
+- AI is not about replacing human judgment but amplifying it – especially in critical domains (HR, security, operations)
+- Enterprises prioritize **security**, **compliance**, and **control** – private connectivity and data residency are non-negotiable
+- **Low-code/No-code** AI assistants (like Amazon Q) empower business users to leverage AI without deep technical skills
+- **Time-to-value** is critical – tools that reduce manual effort (CV screening, incident investigation) deliver immediate ROI
 
 #### Technical Perspective
 
-- Strong foundational knowledge (databases, algorithms, networking) is critical – never skip the basics
-- Industry data is messy, large, and constantly changing – real-world engineering requires handling failures, security, and cost
-- A single architectural framework (e.g., data platform DNA) works across platforms – learn the concepts, not just the tools
-- Serverless and cloud-native architectures are becoming standard; learn AWS services and how to apply them
-- Observability, monitoring, and security are non-negotiable in production environments
+- **Multi-agent architectures** are preferred for enterprise complexity due to control, cost, and domain specialization
+- **Vietnamese voice AI** requires a pipeline approach (STT → LLM → TTS) because end-to-end models don't support low-resource languages
+- **MCP (Model Context Protocol)** is a key enabler for integrating AI with external systems – essential for enterprise adoption
+- **Private connectivity** is a must for production-grade AI services – avoid exposing internal APIs to the public internet
+- **Streaming** is critical for real-time interaction – both for voice and chat applications
 
 #### Best Practices
 
-- **Start with the problem**, not the solution – understand the business context first
-- **Communicate effectively** – technical skills alone aren't enough; learn to talk to business stakeholders
-- **Invest in yourself** continuously – get certifications, build side projects, write blog posts
-- **Embrace mistakes** – they are learning opportunities, especially early in your career
-- **Build a network** – attend events, ask questions, connect with peers and mentors
+- **Start small** – build an MVP that solves a real pain point, then iterate based on feedback
+- **Design for human-in-the-loop** – especially in critical systems (AML, security, infrastructure)
+- **Invest in observability** – AI agents are only as good as the data they can access
+- **Choose the right architecture** – single vs. multi-agent depends on your specific use case and cost constraints
+- **Prioritize security from day one** – data governance and access control should be baked in, not added later
 
 ### Applying to Work
 
-- **Apply cloud principles** to current projects – use AWS free tier to experiment with Lambda, S3, and RDS
-- **Practice with real data** – simulate messy data from public APIs and build ETL pipelines
-- **Prototype production-grade systems** – include error handling, logging, and security measures
-- **Improve communication skills** – practice explaining technical concepts to non-technical audiences
-- **Adopt a growth mindset** – set a goal to earn at least one AWS certification or build a side project each semester
-- **Join community events** (First Cloud AI Journey, AWS User Groups) to network and learn
-- **Mentor others** – teaching reinforces your own knowledge
+- **Evaluate multi-agent architectures** for your current project – compare cost, complexity, and flexibility vs. a single agent
+- **Prototype a voice agent** using the STT → LLM → TTS pipeline – start with English or existing Vietnamese models
+- **Experiment with Amazon Q** – try the free tier to automate a small workflow (e.g., summarizing emails, generating reports)
+- **Improve observability** in your systems – ensure logs, metrics, and traces are available for AI agents to consume
+- **Implement private connectivity** if you're developing AI services for internal use – avoid exposing APIs to the internet
+- **Adopt MCP** to connect AI agents to your existing systems (databases, ticketing, HR systems)
 
 ### Event Experience
 
-Attending the **AWS: Enterprise Cloud Architectures and Industry Application** study tour was an eye-opening experience, bridging the gap between academic theory and industry practice. Key experiences included:
+Attending the **FCAJ Community Day - June 2026** was a comprehensive deep-dive into how AI agents are transforming enterprise operations. Key experiences included:
 
-#### Learning from industry experts
-- Nguyễn Gia Hưng's keynote provided a sobering yet motivating view of the job market – the bar is higher than ever, but opportunities abound for those who prepare
-- Bành Cẩm Vĩnh's journey from startup to enterprise to consulting illustrated the diversity of data engineering roles and the importance of business acumen
-- Như Trần's personal story of overcoming fear and multiple rejections to join AWS was inspiring and relatable
-- Khang Nguyễn's perspective as a recent graduate gave a practical roadmap for current students
+#### Learning from diverse speakers
+- Steve Trần shared the journey from developer to founder, emphasizing the importance of solving real problems and finding champion customers
+- The Voice AI session highlighted the unique challenges of Vietnamese language and the practical pipeline approach
+- The DevOps Agent demo showed how AI can significantly reduce incident resolution time – a tangible business benefit
+- The Amazon Q session demonstrated that AI is not just for engineers; HR and business teams can leverage it too
 
-#### Practical insights
-- The distinction between school projects (clean, small) and industry (messy, large, real-time) was made clear – I now understand why companies value experience over grades
-- The **Data Platform DNA** framework (Injection → Processing → Storage → Governance → Catalog → Analytics) is a reusable mental model
-- Realizing that communication and relationship-building are as important as coding skills
+#### Hands-on technical exposure
+- Understanding the trade-offs between multi-agent and single-agent architectures
+- Learning about MCP and how to integrate AI with external APIs
+- Seeing live demos of AI agents in action – from incident investigation to CV screening
+- Discovering the importance of private connectivity for enterprise security
 
 #### New technologies explored
-- AWS services: Lambda, S3, Redshift, Kinesis, Bedrock, Amplify, Cognito, and more
-- CI/CD, Infrastructure as Code (Terraform, CloudFormation), observability (CloudWatch, X-Ray)
-- Data engineering tools: Airflow, dbt, Spark, and cloud-native alternatives
+- **AWS Bedrock** (foundational models, guardrails)
+- **Amazon Q** (agentic AI assistant for business users)
+- **DevOps Agent** (incident management)
+- **MCP (Model Context Protocol)** for AI integration
+- **Voice AI** (STT, LLM, TTS) for Vietnamese
 
 #### Networking and discussions
-- Engaging with peers from Swinburne Ho Chi Minh and Can Tho campuses
-- Q&A sessions revealed shared concerns about skill gaps, AI impact, and career paths
-- Learned the importance of visibility – asking questions during the event itself builds connections
+- Engaging with speakers and fellow attendees during Q&A sessions
+- Learning about real-world challenges and solutions from different industries (banking, retail, telecom)
+- Understanding that AI adoption varies by industry – some are more advanced, others are just starting
 
 #### Lessons learned
-- I must invest more in my foundational knowledge – these are the skills that separate me from AI
-- I need to build projects that solve real business problems, not just academic exercises
-- I should actively seek opportunities to practice public speaking and networking
-- The job market is competitive, but persistence and continuous learning will pay off
+- **AI is a force multiplier**, not a replacement – it amplifies the skills of those who use it well
+- **Security and compliance** are critical for enterprise adoption – private connectivity and data residency are must-haves
+- **Multi-agent architectures** offer better control and cost optimization than single-agent systems
+- **Building AI products** for enterprises requires patience and close collaboration with customers
 
 #### Some event photos
-![Speaker presentation](/images/3-Event/Event2/Swinburne_Cloud_Mastery_2026.png)
+![Speaker presentation](/images/3-Event/Event3/event3.png)
+
+

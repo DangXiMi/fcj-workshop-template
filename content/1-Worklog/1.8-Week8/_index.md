@@ -1,55 +1,79 @@
 ---
 title: "Week 8 Worklog"
-date: 2026-08-03
+date: 2026-07-20
 weight: 8
 chapter: false
-pre: " <b> 1.8. </b> "
 build:
   list: always
   render: always
+pre: " <b> 1.8. </b> "
 ---
 
 ### Week 8 Objectives:
 
-* Consolidate all learned skills into an end‑to‑end AI project
-* Build a complete AI application from data ingestion to deployment
-* Apply MLOps, serverless, and AI services
+* Consolidate all learned skills into an end‑to‑end serverless AI project
+* Build a complete Student Performance Early Warning System from data ingestion to deployment
+* Apply serverless architecture, Machine Learning, and AWS services
 * Deliver final presentation and documentation
 
-### Tasks Carried Out This Week (August 3 – August 14):
+### Tasks Carried Out This Week (July 20 – July 31):
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-| 1–2 | **Final Project Kick‑off:** <br>&emsp; + Define project scope and requirements <br>&emsp; + Design architecture diagram <br>&emsp; + Choose data sources and ML problem | 03/08/2026 | 04/08/2026 | Project Guidelines |
-| 3–4 | **Data Preparation & Feature Engineering:** <br>&emsp; + Use Glue and Athena to clean and transform data <br>&emsp; + Create feature groups in SageMaker Feature Store | 05/08/2026 | 06/08/2026 | Previous workshops |
-| 5–6 | **Model Development & Training:** <br>&emsp; + Train multiple models (built‑in or custom) <br>&emsp; + Perform hyperparameter tuning <br>&emsp; + Evaluate and select best model | 07/08/2026 | 08/08/2026 | SageMaker notebooks |
-| 7–8 | **MLOps Pipeline Setup:** <br>&emsp; + Build SageMaker Pipeline for automated retraining <br>&emsp; + Set up CI/CD with CodePipeline and CDK <br>&emsp; + Implement model registry and approval | 09/08/2026 | 10/08/2026 | MLOps workshops |
-| 9–10 | **Application Integration & Frontend:** <br>&emsp; + Develop a serverless API (Lambda + API Gateway) <br>&emsp; + Build a frontend using React/Amplify <br>&emsp; + Integrate authentication (Cognito) and AI services | 11/08/2026 | 12/08/2026 | Serverless workshops |
-| 11–12 | **Testing, Monitoring & Documentation:** <br>&emsp; + Write unit and integration tests <br>&emsp; + Set up CloudWatch dashboards and alerts <br>&emsp; + Prepare final documentation and presentation | 13/08/2026 | 14/08/2026 | Monitoring modules |
+| 1–2 | **Final Project Kick‑off:** <br>&emsp; + Define project scope and requirements <br>&emsp; + Design architecture diagram (AWS Serverless) <br>&emsp; + Choose data sources and ML problem (XGBoost) | 20/07/2026 | 21/07/2026 | Project Guidelines |
+| 3–4 | **Data Preparation & EDA:** <br>&emsp; + Clean and transform student dataset <br>&emsp; + Perform Exploratory Data Analysis (EDA) <br>&emsp; + Feature selection and engineering | 22/07/2026 | 23/07/2026 | Training Notebook |
+| 5–6 | **Model Development & Training:** <br>&emsp; + Train XGBoost model locally (scikit-learn) <br>&emsp; + Evaluate model (99.67% accuracy, AUC-ROC: 1.0) <br>&emsp; + Convert to native XGBoost format for SageMaker | 24/07/2026 | 25/07/2026 | SageMaker notebooks |
+| 7–8 | **Model Deployment & Serverless API:** <br>&emsp; + Deploy model to SageMaker Serverless Endpoint <br>&emsp; + Build Lambda functions (CRUD + Prediction) <br>&emsp; + Create API Gateway REST API <br>&emsp; + Configure S3 Trigger for batch processing | 26/07/2026 | 27/07/2026 | MLOps workshops |
+| 9–10 | **Application Integration & Frontend:** <br>&emsp; + Develop Lambda functions: 7 functions (CRUD + Predictions) <br>&emsp; + Build React Dashboard (S3 + CloudFront) <br>&emsp; + Integrate SNS email alerts for high-risk students | 28/07/2026 | 29/07/2026 | Serverless workshops |
+| 11–12 | **Testing, Monitoring & Documentation:** <br>&emsp; + Write unit and integration tests <br>&emsp; + Set up CloudWatch dashboards and alarms (9 alarms) <br>&emsp; + Prepare final documentation and presentation | 30/07/2026 | 31/07/2026 | Monitoring modules |
 
 ### Week 8 Achievements:
 
-#### ✅ Final Project: "Intelligent Document Processing System"
+#### Final Project: "Student Performance Early Warning System (SP-EWS)"
 
 **Architecture Overview:**
-- **Data Lake:** S3 for raw and processed data
-- **ETL:** AWS Glue (PySpark) for data transformation
-- **Feature Store:** SageMaker Feature Store for feature reuse
-- **Training:** SageMaker (XGBoost/Linear Learner) + Hyperparameter Tuning
-- **MLOps:** SageMaker Pipelines + Model Registry + CI/CD (CodePipeline)
-- **Inference:** Real‑time endpoints for predictions; batch inference via Step Functions
-- **AI Services:** Comprehend for entity extraction, Translate for multi‑language support
-- **Frontend:** React with Amplify (Cognito auth, API Gateway)
-- **Orchestration:** Step Functions for complex workflows
-- **Monitoring:** CloudWatch, X‑Ray for tracing, and SageMaker Model Monitor
+- **Frontend:** React Dashboard hosted on S3 + CloudFront (CDN)
+- **API:** Amazon API Gateway (REST API) – 6 endpoints
+- **Compute:** AWS Lambda (7 functions – CRUD + Predictions)
+- **ML Model:** XGBoost (99.67% accuracy) deployed on SageMaker Serverless
+- **Database:** Amazon DynamoDB (2 tables: `student_records`, `prediction_results`)
+- **Storage:** Amazon S3 (Frontend hosting, CSV uploads, model artifacts)
+- **Batch Processing:** S3 Trigger → Lambda (predictRiskFunction) → SageMaker → SNS
+- **Real-time Prediction:** Lambda (predictRiskOnDemand) → SageMaker → JSON Response
+- **Notifications:** Amazon SNS (Email alerts for high-risk students)
+- **Monitoring:** Amazon CloudWatch (Logs, Metrics, 9 Alarms)
+- **Security:** IAM Least Privilege
 
 #### Key Project Deliverables:
-* **Code Repository:** All infrastructure as code (CDK) and application code on CodeCommit
-* **CI/CD Pipeline:** Automated deployment of infra, model, and application
-* **Live Demo:** Fully functional web application with AI capabilities
-* **Documentation:** Architecture diagram, setup guide, and usage instructions
+* **Code Repository:** All Lambda functions, React frontend, and training notebook on GitHub
+* **AWS Infrastructure:** Fully deployed serverless system with 9 AWS services
+* **Live Demo:** React dashboard accessible via CloudFront URL
+* **Documentation:** Complete workshop guide (10 sections), architecture diagram, and setup instructions
 * **Presentation:** 30‑minute walkthrough covering decisions, challenges, and outcomes
+* **Blog Posts:** 3-part series (SageMaker Serverless, Batch Processing, SNS Alerts)
 
 ### Key Learning Outcomes:
 
 > **Final Reflection:** The 8‑week journey covered the entire AI/ML landscape on AWS – from foundational services to advanced MLOps and serverless integration. I have gained hands‑on experience in building production‑ready AI systems, following best practices for security, scalability, and maintainability. The internship provided a solid foundation for a career as an AI Engineer on the AWS platform.
+
+> **Key Lessons Learned:**
+> 1. **Lambda Layer Limitation:** Trying to package ML libraries (`xgboost`, `joblib`, `numpy`) in Lambda layers hit the 250 MB limit → switched to SageMaker Serverless.
+> 2. **Feature Consistency:** Features must be sent to SageMaker in the exact same order and format as training (raw values, no normalization).
+> 3. **Batch Processing:** Processing 3,000 students requires `BATCH_SIZE=500` to avoid Lambda timeouts.
+> 4. **SNS Confirmation:** Email subscriptions require manual confirmation (check spam folder).
+> 5. **Serverless Cost:** Total monthly cost ~$0.05 – $0.10 (scales to zero when idle).
+> 6. **End-to-End Integration:** Real-time prediction (API Gateway → Lambda → SageMaker) + Batch prediction (S3 Trigger → Lambda → SageMaker → SNS) working together.
+
+### AWS Services Used:
+
+| Service | Purpose |
+| :--- | :--- |
+| **S3** | Frontend hosting, CSV uploads, model artifacts |
+| **CloudFront** | CDN for React dashboard |
+| **API Gateway** | REST API (6 endpoints) |
+| **Lambda** | 7 serverless functions (CRUD + Predictions) |
+| **DynamoDB** | 2 tables: `student_records`, `prediction_results` |
+| **SageMaker** | Serverless XGBoost endpoint |
+| **SNS** | Email alerts for high-risk students |
+| **CloudWatch** | Logs, metrics, 9 alarms |
+| **IAM** | Security and least privilege |

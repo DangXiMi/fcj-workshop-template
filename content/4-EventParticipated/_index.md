@@ -33,32 +33,6 @@ This event provided real-world insights into Data Analyst and DevOps roles in th
 ---
 
 ### [Event 2](4.2-Event2/)
-**Event Name:** AWS: Enterprise Cloud Architectures and Industry Application featuring Cloud Kinetics & Renova Cloud
-
-**Date & Time:** 04/07/2026
-
-**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
-
-**Role:** Attendee (Online)
-
-**Brief Description:**
-A study tour organized for Swinburne Vietnam students to explore real-world cloud computing and enterprise architectures. The event featured talks from AWS Solution Architects, Data Engineers, and Account Managers covering:
-- Cloud market trends and career opportunities in Vietnam
-- The gap between academic learning and industry practice
-- Data Engineering: how real-world data differs from school projects
-- Overcoming fears and building visibility for career success
-- AI's impact on the job market and how to stay competitive
-
-**Outcomes/Value Gained:**
-- Learned that cloud adoption is irreversible; AWS revenue in Vietnam grew 20x in 6 years
-- Understood that 90% of jobs are filled through referrals, not public postings—networking is critical
-- Gained insights into the Data Platform DNA framework (Injection → Processing → Storage → Governance → Catalog → Analytics)
-- Learned the importance of communication and relationship-building alongside technical skills
-- Recognized that AI amplifies human capability but doesn't replace foundational knowledge
-
----
-
-### [Event 3](4.3-Event3/)
 **Event Name:** FCAJ Community Day – June 2026
 
 **Date & Time:** 27/06/2026
@@ -81,6 +55,32 @@ A community event showcasing real-world AI agent applications across multiple do
 - Gained knowledge about MCP (Model Context Protocol) for integrating AI with external systems
 - Learned how DevOps Agent reduces MTTR from hours to minutes
 - Understood how Amazon Q empowers non-technical teams (HR, Finance) to use AI securely
+
+---
+
+### [Event 3](4.3-Event3/)
+**Event Name:** AWS: Enterprise Cloud Architectures and Industry Application featuring Cloud Kinetics & Renova Cloud
+
+**Date & Time:** 04/07/2026
+
+**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
+
+**Role:** Attendee (Online)
+
+**Brief Description:**
+A study tour organized for Swinburne Vietnam students to explore real-world cloud computing and enterprise architectures. The event featured talks from AWS Solution Architects, Data Engineers, and Account Managers covering:
+- Cloud market trends and career opportunities in Vietnam
+- The gap between academic learning and industry practice
+- Data Engineering: how real-world data differs from school projects
+- Overcoming fears and building visibility for career success
+- AI's impact on the job market and how to stay competitive
+
+**Outcomes/Value Gained:**
+- Learned that cloud adoption is irreversible; AWS revenue in Vietnam grew 20x in 6 years
+- Understood that 90% of jobs are filled through referrals, not public postings—networking is critical
+- Gained insights into the Data Platform DNA framework (Injection → Processing → Storage → Governance → Catalog → Analytics)
+- Learned the importance of communication and relationship-building alongside technical skills
+- Recognized that AI amplifies human capability but doesn't replace foundational knowledge
 
 ---
 

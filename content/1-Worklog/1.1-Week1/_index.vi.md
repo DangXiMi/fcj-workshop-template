@@ -26,19 +26,19 @@ pre: " <b> 1.1. </b> "
 
 ### Thành tựu đạt được Tuần 1:
 
-#### ✅ Nền tảng AWS
+#### Nền tảng AWS
 * Tạo và cấu hình thành công tài khoản AWS Free Tier kèm cảnh báo ngân sách.
 * Thiết lập IAM user, group và policy theo các best practice về bảo mật.
 * Nắm được hạ tầng toàn cầu của AWS (Region, Availability Zone, Edge Location).
 
-#### ✅ Machine Learning Essentials
+#### Machine Learning Essentials
 * Hiểu toàn bộ luồng công việc ML trên AWS từ đầu đến cuối.
 * Khám phá stack AI/ML của AWS:
   * **AI Services** (các model đã được huấn luyện sẵn): Rekognition, Comprehend, Polly, Translate.
   * **ML Services** (nền tảng): SageMaker, Forecast, Personalize.
   * **ML Frameworks** (công cụ): TensorFlow, PyTorch, MXNet, scikit‑learn.
 
-#### ✅ Amazon SageMaker cơ bản
+#### Amazon SageMaker cơ bản
 * **SageMaker Studio:** Khởi chạy và cấu hình môi trường phát triển tích hợp.
 * **Built‑in Algorithms:** Tìm hiểu các thuật toán có sẵn: Linear Learner, XGBoost, K‑Means, Deep Learning (Computer Vision, NLP).
 * **Gán nhãn dữ liệu:** Tạo labeling job với Ground Truth (thủ công và tự động).
@@ -46,7 +46,7 @@ pre: " <b> 1.1. </b> "
 * **Tối ưu siêu tham số:** Tạo tuning job với các dải giá trị chỉ định.
 * **Triển khai model:** Deploy thành công model đã huấn luyện lên real‑time endpoint.
 
-#### ✅ Khái niệm Data Lake
+#### Khái niệm Data Lake
 * Nắm được nguyên lý kiến trúc Data Lake.
 * Tạo S3 bucket với chính sách vòng đời phù hợp.
 * Tìm hiểu AWS Glue Crawler và Data Catalog.

@@ -1,6 +1,6 @@
 ---
 title: "Week 3 Worklog"
-date: 2026-06-29
+date: 2026-06-15
 weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
@@ -18,28 +18,28 @@ pre: " <b> 1.3. </b> "
 
 | Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | --- | ---- | ---------- | --------------- | ------------------ |
-| 1 | **Tổng quan các dịch vụ Data Analytics:** <br>&emsp; + So sánh Athena, Glue, EMR, Redshift, QuickSight <br>&emsp; + Hiểu use case phù hợp cho từng dịch vụ | 29/06/2026 | 29/06/2026 | Analytics Module |
-| 2 | **Phân tích Serverless với Amazon Athena:** <br>&emsp; + Tạo bảng Athena từ dữ liệu trên S3 <br>&emsp; + Viết câu truy vấn SQL trên dữ liệu CSV/Parquet/JSON <br>&emsp; + Phân vùng dữ liệu để tối ưu hiệu năng | 30/06/2026 | 30/06/2026 | Athena Workshop |
-| 3 | **AWS Glue:** <br>&emsp; + Crawler và Data Catalog <br>&emsp; + ETL job với PySpark/Spark <br>&emsp; + Job bookmark và lập lịch | 01/07/2026 | 01/07/2026 | Glue Documentation |
-| 4 | **Business Intelligence với Amazon QuickSight:** <br>&emsp; + Kết nối với Athena và S3 <br>&emsp; + Xây dựng biểu đồ và dashboard <br>&emsp; + Chia sẻ kết quả với các bên liên quan | 02/07/2026 | 02/07/2026 | QuickSight Workshop |
-| 5 | **Advanced PostgreSQL trên AWS – Phần 1:** <br>&emsp; + PostgreSQL managed với Amazon RDS <br>&emsp; + Tinh chỉnh hiệu năng và giám sát <br>&emsp; + Read Replica và Multi‑AZ deployment | 03/07/2026 | 03/07/2026 | PostgreSQL Series |
-| 6 | **Advanced PostgreSQL trên AWS – Phần 2:** <br>&emsp; + Chiến lược migration (DMS) <br>&emsp; + High Availability và Disaster Recovery <br>&emsp; + Extension và Stored Procedure | 04/07/2026 | 04/07/2026 | PostgreSQL Series |
+| 1 | **Tổng quan các dịch vụ Data Analytics:** <br>&emsp; + So sánh Athena, Glue, EMR, Redshift, QuickSight <br>&emsp; + Hiểu use case phù hợp cho từng dịch vụ | 15/06/2026 | 15/06/2026 | Analytics Module |
+| 2 | **Phân tích Serverless với Amazon Athena:** <br>&emsp; + Tạo bảng Athena từ dữ liệu trên S3 <br>&emsp; + Viết câu truy vấn SQL trên dữ liệu CSV/Parquet/JSON <br>&emsp; + Phân vùng dữ liệu để tối ưu hiệu năng | 16/06/2026 | 16/06/2026 | Athena Workshop |
+| 3 | **AWS Glue:** <br>&emsp; + Crawler và Data Catalog <br>&emsp; + ETL job với PySpark/Spark <br>&emsp; + Job bookmark và lập lịch | 17/06/2026 | 17/06/2026 | Glue Documentation |
+| 4 | **Business Intelligence với Amazon QuickSight:** <br>&emsp; + Kết nối với Athena và S3 <br>&emsp; + Xây dựng biểu đồ và dashboard <br>&emsp; + Chia sẻ kết quả với các bên liên quan | 18/06/2026 | 18/06/2026 | QuickSight Workshop |
+| 5 | **Advanced PostgreSQL trên AWS – Phần 1:** <br>&emsp; + PostgreSQL managed với Amazon RDS <br>&emsp; + Tinh chỉnh hiệu năng và giám sát <br>&emsp; + Read Replica và Multi‑AZ deployment | 19/06/2026 | 19/06/2026 | PostgreSQL Series |
+| 6 | **Advanced PostgreSQL trên AWS – Phần 2:** <br>&emsp; + Chiến lược migration (DMS) <br>&emsp; + High Availability và Disaster Recovery <br>&emsp; + Extension và Stored Procedure | 20/06/2026 | 20/06/2026 | PostgreSQL Series |
 
 ### Thành tựu đạt được Tuần 3:
 
-#### ✅ Nền tảng Data Analytics
+#### Nền tảng Data Analytics
 * Hiểu hệ sinh thái analytics của AWS và khi nào nên dùng dịch vụ nào.
 * Tạo truy vấn Athena để phân tích dữ liệu lưu trên S3.
 * Tối ưu truy vấn bằng partitioning và bucketing.
 * Tích hợp Athena với QuickSight cho báo cáo ad‑hoc.
 
-#### ✅ AWS Glue ETL
+#### AWS Glue ETL
 * Thiết lập Glue Data Catalog bằng cách chạy crawler.
 * Viết ETL job bằng PySpark để biến đổi dữ liệu (lọc, gộp, tổng hợp).
 * Tự động hóa job với trigger và lịch trình.
 * Sử dụng job bookmark để xử lý dữ liệu gia tăng.
 
-#### ✅ Amazon QuickSight
+#### Amazon QuickSight
 * Kết nối Athena làm nguồn dữ liệu.
 * Tạo dashboard tương tác với:
   - Biểu đồ cột, đường, heat map.
@@ -47,7 +47,7 @@ pre: " <b> 1.3. </b> "
   - Trường tính toán và hàm tổng hợp.
 * Xuất bản dashboard và chia sẻ với team.
 
-#### ✅ PostgreSQL trên AWS
+#### PostgreSQL trên AWS
 * Khởi chạy RDS PostgreSQL ở môi trường production.
 * Cấu hình Multi‑AZ cho High Availability.
 * Thiết lập Read Replica để scale đọc.

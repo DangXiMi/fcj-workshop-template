@@ -1,6 +1,6 @@
 ---
 title: "Week 7 Worklog"
-date: 2026-07-27
+date: 2026-07-13
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
@@ -18,22 +18,22 @@ pre: " <b> 1.7. </b> "
 
 | Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | --- | ---- | ---------- | --------------- | ------------------ |
-| 1 | **Amazon EventBridge:** <br>&emsp; + Event bus và rule <br>&emsp; + Event pattern và filter <br>&emsp; + Target (Lambda, Step Functions, SNS) | 27/07/2026 | 27/07/2026 | EventBridge Docs |
-| 2 | **AWS Step Functions:** <br>&emsp; + State machine và workflow <br>&emsp; + Các state: Task, Choice, Parallel, Wait <br>&emsp; + Xử lý lỗi và retry | 28/07/2026 | 28/07/2026 | Step Functions Workshop |
-| 3 | **Điều phối workflow với Step Functions:** <br>&emsp; + Điều phối luồng ML (chuẩn bị dữ liệu, huấn luyện, triển khai) <br>&emsp; + Tích hợp với SageMaker, Lambda, Glue <br>&emsp; + Giám sát và logging | 29/07/2026 | 29/07/2026 | Step Functions ML |
-| 4 | **Nhắn tin với SQS và SNS:** <br>&emsp; + So sánh queue và pub/sub <br>&emsp; + SQS Dead‑Letter Queue và Visibility Timeout <br>&emsp; + SNS Filtering và Fan‑out | 30/07/2026 | 30/07/2026 | SQS/SNS Docs |
-| 5 | **Xử lý sự kiện với SQS và SNS (Book Store Series):** <br>&emsp; + Tách rời microservice cho xử lý đơn hàng <br>&emsp; + Sử dụng SQS cho tác vụ bất đồng bộ (xử lý ảnh) <br>&emsp; + Thông báo cho khách hàng qua SNS | 31/07/2026 | 31/07/2026 | Book Store Series – Phần 6 |
-| 6 | **Xây dựng AI Pipeline hướng sự kiện:** <br>&emsp; + Kết hợp EventBridge, Step Functions, SQS và AI Services <br>&emsp; + Tạo hệ thống xử lý tài liệu với AI enrichment | 01/08/2026 | 01/08/2026 | Document Management Series |
+| 1 | **Amazon EventBridge:** <br>&emsp; + Event bus và rule <br>&emsp; + Event pattern và filter <br>&emsp; + Target (Lambda, Step Functions, SNS) | 13/07/2026 | 13/07/2026 | EventBridge Docs |
+| 2 | **AWS Step Functions:** <br>&emsp; + State machine và workflow <br>&emsp; + Các state: Task, Choice, Parallel, Wait <br>&emsp; + Xử lý lỗi và retry | 14/07/2026 | 14/07/2026 | Step Functions Workshop |
+| 3 | **Điều phối workflow với Step Functions:** <br>&emsp; + Điều phối luồng ML (chuẩn bị dữ liệu, huấn luyện, triển khai) <br>&emsp; + Tích hợp với SageMaker, Lambda, Glue <br>&emsp; + Giám sát và logging | 15/07/2026 | 15/07/2026 | Step Functions ML |
+| 4 | **Nhắn tin với SQS và SNS:** <br>&emsp; + So sánh queue và pub/sub <br>&emsp; + SQS Dead‑Letter Queue và Visibility Timeout <br>&emsp; + SNS Filtering và Fan‑out | 16/07/2026 | 16/07/2026 | SQS/SNS Docs |
+| 5 | **Xử lý sự kiện với SQS và SNS (Book Store Series):** <br>&emsp; + Tách rời microservice cho xử lý đơn hàng <br>&emsp; + Sử dụng SQS cho tác vụ bất đồng bộ (xử lý ảnh) <br>&emsp; + Thông báo cho khách hàng qua SNS | 17/07/2026 | 17/07/2026 | Book Store Series – Phần 6 |
+| 6 | **Xây dựng AI Pipeline hướng sự kiện:** <br>&emsp; + Kết hợp EventBridge, Step Functions, SQS và AI Services <br>&emsp; + Tạo hệ thống xử lý tài liệu với AI enrichment | 18/07/2026 | 18/07/2026 | Document Management Series |
 
 ### Thành tựu đạt được Tuần 7:
 
-#### ✅ Amazon EventBridge
+#### Amazon EventBridge
 * Tạo custom event bus và định nghĩa schema.
 * Thiết lập rule để định tuyến event theo pattern.
 * Kích hoạt Lambda và Step Functions khi có sự kiện.
 * Tích hợp với SaaS bên thứ ba qua partner event.
 
-#### ✅ AWS Step Functions
+#### AWS Step Functions
 * Thiết kế state machine cho điều phối phức tạp:
   - Xử lý song song nhiều tác vụ.
   - State Choice để rẽ nhánh có điều kiện.
@@ -42,13 +42,13 @@ pre: " <b> 1.7. </b> "
 * Tích hợp với SageMaker cho training và inference.
 * Sử dụng CloudWatch để giám sát execution.
 
-#### ✅ Dịch vụ nhắn tin
+#### Dịch vụ nhắn tin
 * Triển khai SQS queue để tách rời và cân bằng tải.
 * Cấu hình Dead‑Letter Queue và cảnh báo khi message tồn đọng.
 * Xuất bản lên SNS topic và đăng ký subscriber qua email, SMS, Lambda.
 * Sử dụng SNS Filtering để gửi message đến đúng subscriber.
 
-#### ✅ Xử lý tài liệu AI hướng sự kiện
+#### Xử lý tài liệu AI hướng sự kiện
 * Xây dựng pipeline:
   1. Upload tài liệu lên S3 → EventBridge rule.
   2. Step Functions bắt đầu: trích xuất văn bản, NLP với Comprehend, dịch với Translate, tóm tắt.

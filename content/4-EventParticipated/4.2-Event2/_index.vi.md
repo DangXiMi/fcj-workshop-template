@@ -8,236 +8,232 @@ pre: " <b> 4.2. </b> "
 
 ### Mục tiêu sự kiện
 
-- Cung cấp cho sinh viên Swinburne Vietnam góc nhìn thực tế về điện toán đám mây và kiến trúc doanh nghiệp
-- Thu hẹp khoảng cách giữa học tập trên ghế nhà trường và thực hành trong ngành
-- Chia sẻ góc nhìn về cơ hội nghề nghiệp, khoảng cách kỹ năng và tác động của AI đến thị trường lao động
-- Trình bày kinh nghiệm thực tế từ các kỹ sư điện toán đám mây, kỹ sư dữ liệu và kiến trúc sư giải pháp
+- Trình diễn các ứng dụng AI agent thực tế trong nhiều lĩnh vực
+- Cung cấp hiểu biết kỹ thuật thực tế từ các chuyên gia trong ngành
+- Thúc đẩy học tập cộng đồng và kết nối
+- Trình diễn các dịch vụ AWS trong production (Amazon Q, Bedrock, DevOps Agent, Voice AI)
+- Nhấn mạnh sự giao thoa giữa AI, kinh doanh và nhu cầu doanh nghiệp
 
 ### Diễn giả
 
-- **Nguyễn Trần Minh Duy** – Cán bộ Kết nối Ngành, Swinburne Vietnam (Người dẫn chương trình)
-- **Nguyễn Gia Hưng** – Trưởng phòng Kiến trúc sư Giải pháp, Amazon Web Services Vietnam (Diễn giả chính)
-- **Bành Cẩm Vĩnh** – Kỹ sư Dữ liệu, Renova Cloud; AWS Community Builder
-- **Như Trần** – Quản lý Tài khoản, Amazon Web Services Vietnam
-- **Khang Nguyễn** – Kiến trúc sư Giải pháp, Cloud Kinetics; Cựu sinh viên Swinburne
+- **Steve Trần** – Nhà sáng lập, Cloud Thinker
+- **Hiếu Nghị** – Renova Cloud (Phiên Voice AI)
+- **Kiệt** – Student Builder (Trình diễn Voice AI)
+- **Trung** – Nhà sáng lập & CEO, R AI
+- **Bảo** – Kỹ sư Đám mây, Cloud Kinetics (DevOps Agent)
+- **Nguyên** – Kỹ sư Đám mây, Cloud Kinetics (DevOps Agent)
+- **Trường** – Kiến trúc sư Giải pháp AI, Noventis (Amazon Q & HR)
+- **Minh Anh** – Kiến trúc sư Giải pháp, Noventis (Amazon Q & HR)
+- **Toàn Nguyễn** – AWS Security Builder (Amazon Q Bảo mật)
+- **Nghị** – Renova Cloud (Amazon Q Bảo mật)
 
 ### Điểm nổi bật
 
-#### Phát biểu khai mạc (Nguyễn Trần Minh Duy)
+#### Phiên 1: Vận hành Đám mây & AI (Steve Trần – Cloud Thinker)
 
-- Hợp tác giữa AWS và Swinburne Vietnam – chuyến tham quan học tập năm thứ ba liên tiếp
-- Sinh viên từ Swinburne Vietnam (cơ sở Hồ Chí Minh và Cần Thơ) tham dự
-- Kết nối với cộng đồng **First Cloud AI Journey**, thúc đẩy chia sẻ kiến thức và cố vấn
-- Nhấn mạnh tinh thần "forward": cựu sinh viên quay lại hướng dẫn sinh viên hiện tại
+**Hành trình Nghề nghiệp & Góc nhìn Thị trường:**
+- Bắt đầu trong lĩnh vực IT trong thời kỳ COVID; nhu cầu đám mây bùng nổ
+- Nhận ra đám mây là thị trường tăng trưởng cao và chuyển hướng sớm
+- AI đang chuyển dịch nhu cầu từ lập trình viên junior sang kỹ sư senior có thể sử dụng hiệu quả các công cụ AI
+- Thách thức doanh nghiệp hiện tại: **độ phức tạp** – hệ thống cũ, đa đám mây và thiếu nhân tài DevOps
 
-#### Bài phát biểu chính: Thị trường Đám mây & Xu hướng Nghề nghiệp (Nguyễn Gia Hưng)
+**Nền tảng Cloud Thinker:**
+- Giải quyết các điểm đau vận hành bằng **agentic AI**:
+  - **Quản lý Sự cố**: AI điều tra nguyên nhân gốc rễ trong vài phút thay vì hàng giờ
+  - **Kiểm soát Chất lượng**: AI xem xét các thay đổi hạ tầng trước production để giảm lỗi
+  - **Tối ưu Chi phí**: AI liên tục giám sát và đề xuất tối ưu – nhiều khách hàng đã chuyển tác vụ FinOps cho AI
+  - **Bảo mật**: Kiểm tra thâm nhập và đánh giá tuân thủ tích hợp sẵn
 
-**Tình hình Áp dụng Đám mây tại Việt Nam:**
-- Doanh thu AWS tại Việt Nam tăng **gấp 20 lần trong 6 năm**; thị trường phần cứng truyền thống giảm 10 lần
-- Chiến lược Cloud-first đã trở thành tiêu chuẩn cho doanh nghiệp – chỉ các tác vụ như CCTV mới giữ lại tại chỗ
-- Các ngành áp dụng AWS chính: Ngân hàng, Dịch vụ Tài chính, Bán lẻ, Sản xuất, FMCG, Viễn thông
-- AWS đầu tư mạnh vào hạ tầng địa phương: **Local Zones** tại Hà Nội và TP.HCM, các nút CDN
-- Trung tâm nhân tài toàn cầu: Việt Nam nắm giữ 30% lực lượng CNTT toàn cầu của National Australia Bank (NAB) – nhiều hơn Ấn Độ
+**Quyết định Kiến trúc Quan trọng:**
+- **Đa-agent so với Single Agent**: Tranh luận giữa agent chuyên biệt và một siêu agent
+  - Đa-agent cho phép ngữ cảnh tập trung hơn, kiểm soát chi phí tốt hơn và phân quyền theo vai trò
+  - Single agent có thể làm 95% tác vụ, nhưng với chi phí cao hơn và rủi ro hallucination
+  - Cloud Thinker sử dụng **kiến trúc đa-agent** để xử lý độ phức tạp doanh nghiệp tốt hơn
 
-**Thực tế Nghề nghiệp & Khoảng cách Kỹ năng:**
-- Thực tập sinh giờ đây được kỳ vọng phải biết **Kubernetes**, **Containerization** và các công nghệ cloud-native
-- 90% công việc được lấp đầy qua giới thiệu nội bộ, không phải qua đăng tuyển công khai
-- AI đang nâng cao tiêu chuẩn; vị trí đầu vào yêu cầu kinh nghiệm tương đương 3–4 năm
-- **Khoảng cách kỹ năng**: Công ty yêu cầu đóng góp ngay từ cấp junior; không có thời gian đào tạo kéo dài
-- **Tầm nhìn quan trọng**: Thành công = Năng lực × Tầm nhìn × Kiên trì
+**Thách thức cho Startups:**
+- Bán hàng cho doanh nghiệp đòi hỏi thay đổi 50% quy trình của họ
+- Cần **khách hàng tiên phong** (ví dụ: F88, FPT) để xác nhận phù hợp sản phẩm-thị trường
+- Xây dựng **dịch vụ quản lý đầy đủ** để giáo dục và hỗ trợ chuyển đổi doanh nghiệp
+- Dự kiến nỗ lực onboarding doanh nghiệp gấp 10 lần so với phân phối SaaS
 
-**Tập trung vào Ngành:**
-- Chọn một ngành (ví dụ: Ngân hàng, Bán lẻ, Fintech) cùng với vai trò kỹ thuật – tạo sự khác biệt
-- Khuyến khích sinh viên xây dựng dự án giải quyết các điểm đau cụ thể của ngành
+**Bài học:** Tập trung vào vấn đề thực tế; làm việc nhanh, lặp lại và tìm khách hàng sớm.
 
-**Phép tương tự về Đèn LED:**
-- AI, giống như đèn LED, giảm chi phí mỗi đơn vị, nhưng tổng tiêu thụ tăng vì được sử dụng nhiều hơn
-- Phần mềm trở nên rẻ hơn, dẫn đến nhiều phần mềm hơn và nhiều việc làm hơn – mặc dù vai trò junior có thể thu hẹp trong khi vai trò senior tăng
+#### Phiên 2: Voice AI – Kích hoạt Agent Giọng nói Tiếng Việt (Hiếu Nghị, Kiệt, Trung)
 
-**Cam kết của AWS tại Việt Nam:**
-- Đầu tư vào nhân tài địa phương (99% nhân sự Việt Nam), hạ tầng (trung tâm dữ liệu > $6 tỷ đầu tư) và các chương trình cộng đồng (First Cloud AI Journey)
-- AWS hướng đến xây dựng cộng đồng builder bền vững, không chỉ bán giấy phép
+**Bối cảnh Voice AI:**
+- Các mô hình speech-to-speech chủ yếu chỉ hỗ trợ tiếng Anh – tiếng Việt là **ngôn ngữ ít tài nguyên**
+- Cách tiếp cận hiện tại tại Việt Nam: pipeline **STT → LLM → TTS** (các thành phần riêng biệt)
+- Điều này cho phép kiểm soát, gọi công cụ và hỗ trợ ngôn ngữ Việt
 
-**Mô hình tư duy để Thành công:**
-- **Làm việc nhóm**, **Xây dựng**, **Giải quyết vấn đề**, **Kiên cường**, **Đầu tư vào bản thân**, **Học tập suốt đời**
-- Đối xử với sếp và khách hàng như người thân – kỹ năng giao tiếp và xây dựng mối quan hệ rất quan trọng
+**Thành phần:**
+- **STT (Speech-to-Text)**: Chuyển giọng nói thành văn bản – được huấn luyện tùy chỉnh cho giọng Việt
+- **LLM**: Xử lý suy luận, ngữ cảnh, gọi công cụ – hoạt động tốt với tiếng Việt
+- **TTS (Text-to-Speech)**: Chuyển phản hồi thành giọng nói – có thể tùy chỉnh cho giọng/kịch bản khác nhau
 
-#### Kỹ thuật Dữ liệu: Học thuật so với Ngành công nghiệp (Bành Cẩm Vĩnh)
+**Thách thức cho Voice AI Tiếng Việt:**
+- **Xử lý giọng vùng**: Dữ liệu huấn luyện bao gồm 10-20% giọng vùng miền (Bắc, Trung, Nam)
+- **Phát hiện giới tính**: Tiếng Việt yêu cầu sử dụng đại từ xưng hô đúng (anh/chị) – mô hình phải phát hiện giới tính người nói
+- **Xử lý ngắt lời**: Mô hình phải quyết định khi nào nên nói và khi nào lắng nghe – đòi hỏi huấn luyện bổ sung
+- **Độ trễ**: Streaming đầu-cuối là quan trọng cho hội thoại tự nhiên
 
-**Các môn nền tảng (Khuyến nghị cho mọi sinh viên CNTT):**
-- Hệ thống Cơ sở dữ liệu
-- Ngôn ngữ Lập trình
-- Cấu trúc Dữ liệu & Giải thuật
-- Cơ sở dữ liệu Phân tán
-- Tích hợp API
+**Tính năng Doanh nghiệp:**
+- **Quản lý prompt tự phục vụ** cho người dùng kinh doanh (phi kỹ thuật)
+- **Phiên bản và nhật ký kiểm toán** để tuân thủ (giống GitHub)
+- Tích hợp **Cơ sở tri thức** cho câu trả lời theo lĩnh vực
+- **Chuyển giao cho con người**: Chuyển đổi liền mạch từ AI sang người khi AI không xử lý được truy vấn
+- **Cá nhân hóa giọng nói**: Giọng theo trường hợp sử dụng cụ thể (ví dụ: thu hồi nợ có thể sử dụng giọng vùng miền để tương tác tốt hơn)
 
-**Khác biệt chính – Trường học so với Thế giới thực:**
+**Trình diễn trực tiếp:**
+- Quick Agent xây dựng trên **AWS Bedrock** với **Knowledge Base** hỗ trợ sản phẩm Apple
+- Trả lời câu hỏi về MacBook Pro – speech-to-speech bằng tiếng Anh (sau đó làm rõ hỗ trợ tiếng Việt đang phát triển)
 
-| Khía cạnh | Trường học | Ngành công nghiệp |
-|-----------|------------|-------------------|
-| Dữ liệu | Sạch, nhỏ, tĩnh | Lộn xộn, khổng lồ, streaming từ nhiều nguồn |
-| Yêu cầu | Xác định rõ, ổn định | Mơ hồ, thay đổi liên tục |
-| Thời gian | Linh hoạt (tuần/tháng) | Khẩn cấp (ngày/giờ) |
-| Trách nhiệm | Thấp (chỉ ảnh hưởng điểm) | Cao (ảnh hưởng production, mất doanh thu) |
-| Nhóm | Nhỏ, đồng nghiệp quen biết | Đa chức năng với nhiều bộ phận |
+**Bài học:** Voice AI tiếng Việt là một lĩnh vực đang phát triển; tập trung vào cách tiếp cận pipeline để kiểm soát và độ tin cậy.
 
-**90% công việc kỹ thuật dữ liệu thực tế không phải là viết code:**
-- Xử lý lỗi, thử lại, chất lượng dữ liệu, bảo mật, tuân thủ, tối ưu hóa chi phí
-- Xây dựng cho production đòi hỏi tư duy vượt ra ngoài luồng "happy path"
+#### Phiên 3: DevOps Agent – Quản lý Sự cố Thông minh (Bảo & Nguyên – Cloud Kinetics)
 
-**Một Khuôn khổ cho Mọi Nền tảng (DNA của Kỹ thuật Dữ liệu):**
-- **Nhập liệu** → **Xử lý** → **Lưu trữ** → **Quản trị** → **Danh mục** → **Phân tích**
-- Kỹ năng có thể chuyển đổi giữa các công cụ; tập trung vào hiểu các thành phần, không chỉ dịch vụ cụ thể
+**Vấn đề:**
+- Khắc phục sự cố thủ công bị phân mảnh: logs ở nhiều nơi, khoảng cách tri thức, gián đoạn liên tục
+- MTTR (Thời gian trung bình để khắc phục) quá cao do thiếu ngữ cảnh
 
-**Hành trình 5 năm:**
-- **Startup (Sieuviet Group):** Xây dựng mọi thứ từ đầu – học về quyền sở hữu và kỹ thuật dữ liệu toàn diện
-- **Doanh nghiệp (Heineken Vietnam):** Tập trung vào giá trị kinh doanh, giao tiếp với bên liên quan, xác định yêu cầu (ví dụ: "người dùng hoạt động" có nghĩa khác nhau với các bộ phận khác nhau)
-- **Fintech (ZaloPay – VNG):** Quy mô lớn, độ khả dụng cao – học cách thiết kế cho tăng trưởng và thất bại
-- **Tư vấn (Renova Cloud):** Tư vấn cho khách hàng về kiến trúc và lựa chọn công cụ – bắt đầu từ vấn đề kinh doanh, không phải công cụ
+**Giải pháp – AWS DevOps Agent:**
 
-**AI có thể và không thể thay thế điều gì:**
-- AI có thể viết code, nhưng không thể hiểu ngữ cảnh kinh doanh hoặc đưa ra quyết định kiến trúc
-- Kỹ năng quan trọng: **Tư duy kiến trúc**, **Hiểu biết kinh doanh**, **Giao tiếp**, **Ra quyết định**
-- Sử dụng AI để khuếch đại kỹ năng, không thay thế tư duy
+**Sáu Năng lực Cốt lõi:**
+1. **Học ngữ cảnh**: Agent xây dựng topology của toàn bộ hạ tầng (AWS, on-prem, Azure) – học các mối quan hệ và phụ thuộc
+2. **Kiểm soát**: Phân quyền đầy đủ – agent có thể bị giới hạn đối với tài nguyên cụ thể qua tags và chính sách IAM
+3. **Tích hợp**: Có thể mở rộng qua MCP (Model Context Protocol) – kết nối với bất kỳ nguồn dữ liệu nào (logs, cơ sở dữ liệu, công cụ tùy chỉnh)
+4. **Hợp tác**: Người dùng có thể trò chuyện, nhận đề xuất và chuyển đến hệ thống ticketing (ServiceNow, Slack)
+5. **Thuận tiện**: Thiết lập một cú nhấp chuột qua AWS Console; giao diện chat dựa trên web
+6. **Hiệu quả chi phí**: Định giá theo giây ($0.083/giây), không theo token – thanh toán dễ dự đoán
 
-**Bài học bổ sung:**
-- **Kết nối các dấu chấm** – mọi trải nghiệm, thất bại hay thành công, đều xây dựng sự nghiệp
-- **Kiên trì** – tiếp tục ứng tuyển ngay cả khi bị từ chối
-- **Tư duy phát triển** – cởi mở học hỏi từ mọi người
+**Cách hoạt động (4 Bước):**
+1. **Kích hoạt**: Cảnh báo (CloudWatch) hoặc điều tra do người dùng khởi tạo
+2. **Điều tra**: Agent phân tích logs, metrics, traces và topology để tạo giả thuyết
+3. **Giảm thiểu**: Đề xuất các bước khắc phục (không tự động thực thi – ưu tiên an toàn)
+4. **Cải thiện**: Đề xuất sửa chữa dài hạn (ví dụ: thêm cache, mở rộng tài nguyên)
 
-#### Vượt qua Nỗi sợ: Cơ hội và Tầm nhìn (Như Trần)
+**Trình diễn trực tiếp:**
+- Mô phỏng tấn công DDoS trên ứng dụng thương mại điện tử (ECS + ALB)
+- Agent phát hiện độ trễ cao, điều tra, xác định 10 tác vụ ECS tạo 1000 request/giây và cung cấp kế hoạch giảm thiểu (dừng tác vụ, thu nhỏ)
+- Agent cũng tạo phân tích nguyên nhân gốc rễ với các lệnh có thể hành động (copy-paste vào terminal)
+- Sau khi áp dụng sửa chữa, ứng dụng trở lại bình thường
 
-**Nỗi sợ phổ biến của Sinh viên:**
-- Sợ sai (bắt nguồn từ cách chấm điểm tập trung vào tính đúng đắn của trường học)
-- Sợ nói trước đám đông và bị đánh giá
-- Sợ làm cha mẹ thất vọng
+**Chỉ số thành công (từ các trường hợp khách hàng):**
+- Đại học (200k sinh viên): Giảm MTTR từ 2 giờ xuống 28 phút (-77%)
+- Zenchef (nền tảng nhà hàng): Tìm cấu hình sai trong 20 phút (-75% so với thủ công)
+- KDDI (viễn thông Nhật Bản): Giảm thời gian điều tra từ tuần xuống ngày
 
-**Hiểu lại Nỗi sợ:**
-- Sợ sai thực chất là sợ hậu quả – hãy tách biệt hai điều đó
-- Nói trước đám đông là một kỹ năng; hãy thực hành bằng cách tình nguyện, bất kể cảm giác thế nào
+**Điều kiện tiên quyết cho Thành công:**
+- Khả năng quan sát tốt: logs, metrics và alarms toàn diện
+- Hệ thống quy mô lớn: giá trị nhiều hơn trong môi trường phức tạp
+- Human-in-the-loop: agent đề xuất, con người thực thi
 
-**Đối mặt với Kỳ vọng của Cha mẹ:**
-- Có những cuộc trò chuyện thẳng thắn – thường cha mẹ chỉ muốn bạn hạnh phúc và ổn định
-- Kỳ vọng của họ không giống như áp lực bạn cảm nhận
+**Bài học:** DevOps Agent là hệ số nhân lực cho đội SRE/DevOps; nó không thay thế kỹ năng mà khuếch đại chúng.
 
-**Mẹo Giao tiếp:**
-- Hiểu lầm là điều tự nhiên; đó là vấn đề từ cả hai phía
-- Tiếp cận sếp với giải pháp, không chỉ vấn đề (ví dụ: "Em đã không đạt KPI này, đây là kế hoạch của em để khắc phục")
-- Trò chuyện nhỏ với lãnh đạo (ví dụ: "Chào buổi sáng, cuối tuần của anh/chị thế nào?") làm tăng tầm nhìn
+#### Phiên 4: Amazon Q – AI cho HR và Quản lý Nhân tài (Trường & Minh Anh – Noventis)
 
-**Tư duy về Cơ hội:**
-- Cơ hội không chỉ là các tin tuyển dụng; chúng thường đến qua các mối quan hệ
-- **Đại dương Đỏ so với Đại dương Xanh**: Tìm các lĩnh vực có ít cạnh tranh hơn
-- Câu chuyện cá nhân: Bị từ chối hơn 10 lần bởi Amazon, cuối cùng được nhận qua giới thiệu và sự kiên trì
-- Lần thử thứ 11 mới quan trọng – chỉ cần một lần thành công
-- Hãy "có khả năng được đào tạo" – thể hiện rằng bạn có thể học và thích nghi
+**Điểm đau của HR trong Kỷ nguyên AI:**
+- Sàng lọc CV thủ công tốn thời gian và dễ sai sót – thường bỏ lỡ nhân tài chủ chốt
+- Không có khuôn khổ chuẩn hóa để đánh giá ứng viên qua các vai trò
+- Lo ngại về quyền riêng tư dữ liệu khi sử dụng công cụ AI công khai (lộ dữ liệu nhân sự nhạy cảm)
+- Chi phí cao của tuyển dụng sai: trì hoãn, hiệu suất nhóm thấp, tỷ lệ nghỉ việc cao
 
-**Bài học:** Cơ hội ở khắp mọi nơi; hãy gieo hạt giống kết nối và nỗ lực. Bạn không bao giờ biết hạt nào sẽ nảy mầm.
+**Amazon Q – Trợ lý AI Agentic:**
+- **Agent tùy chỉnh**: Xây dựng kỹ năng cho các tác vụ cụ thể (ví dụ: Trợ lý Đánh giá Nhân tài)
+- **Nghiên cứu đa nguồn**: Truy vấn tài liệu nội bộ, trang web và dữ liệu có cấu trúc
+- **Thông minh kinh doanh tự động**: Truy vấn ngôn ngữ tự nhiên trên tập dữ liệu – không cần SQL
+- **Tự động hóa luồng**: Tự động hóa các luồng công việc lặp lại (email, lên lịch, phê duyệt)
 
-#### AI, Kỹ năng và Nghề nghiệp cho Sinh viên (Khang Nguyễn – Kiến trúc sư Giải pháp, Cloud Kinetics)
+**Tích hợp Dữ liệu:**
+- Kết nối với Microsoft (SharePoint, Outlook, OneDrive) và Google Workspace (Gmail, Drive)
+- Có thể kết nối với bất kỳ hệ thống nào qua custom MCP connectors
+- Dữ liệu nằm trong AWS – an toàn, tuân thủ (đã có local zone tại Việt Nam)
 
-**Từ Sinh viên đến Chuyên gia:**
-- Tốt nghiệp Swinburne với chỉ 4 bạn cùng lớp – có quyền tiếp cận đặc biệt với giảng viên
-- Khuyên sinh viên vượt ra ngoài chương trình học: học "tại sao" đằng sau các khái niệm, không chỉ "cái gì"
+**Trình diễn Trường hợp sử dụng HR:**
+1. **Tạo Skill**: Upload file MD mô tả quy trình đánh giá nhân tài – Q tự động xây dựng skill
+2. **Tạo Mô tả Công việc**: Yêu cầu Q tạo JD cho "Kỹ sư Đám mây Junior" – nó tạo JD hoàn chỉnh
+3. **Sàng lọc CV**: Upload thư mục CV; Q xếp hạng ứng viên theo JD với điểm số (Xuất sắc, Tốt, Trung bình, Rất thấp)
+4. **Tạo Báo cáo**: Q tạo bảng điều khiển trực quan hiển thị điểm số, điểm mạnh và đề xuất của ứng viên
+5. **Hành động**: Q có thể gửi email, lên lịch phỏng vấn và cập nhật hệ thống theo dõi qua tự động hóa
 
-**Bẫy AI:**
-- Sinh viên sử dụng AI để hoàn thành bài tập mà không hiểu là phổ biến; 90% bài nộp do AI tạo nhưng thiếu chiều sâu
-- **Bạn có thể thuê ngoài tư duy, nhưng không thể thuê ngoài sự hiểu biết**
-- AI khuếch đại nền tảng của bạn – nếu nền tảng yếu, AI sẽ dẫn bạn đi sai hướng
+**Kết quả:**
+- Giảm thời gian sàng lọc từ ngày xuống phút
+- Đánh giá chuẩn hóa qua tất cả ứng viên
+- Cho phép HR tập trung vào quyết định chiến lược
 
-**Tư duy đúng cho Học tập:**
-- **Đặt câu hỏi mọi thứ** – hỏi "tại sao" nhiều lần để xây dựng hiểu biết sâu
-- **Đón nhận sai lầm** – thất bại rẻ ở trường, đắt ở nơi làm việc
-- **Luôn khát khao** – vượt xa giáo trình; khám phá ngoài yêu cầu khóa học
-- **Chính trực** – nếu bạn biết mình có thể cải thiện dự án ngoài tiêu chí, hãy làm – nó tạo sự khác biệt cho CV
+**Tích hợp Bảo mật (Phiên Toàn & Nghị):**
+- **Kết nối riêng tư**: Sử dụng **VPC Interface Endpoint** để Amazon Q kết nối với MCP server mà không lộ ra internet
+- **Lợi ích**: Không IP công khai, không rủi ro tấn công MITM, dữ liệu nằm trong VPC, đáp ứng tuân thủ (ví dụ: lưu trữ dữ liệu)
+- **Dự toán chi phí**: ~$250–350/tháng cho thiết lập riêng tư (bao gồm Route53 Resolver, ALB, EC2, truyền dữ liệu)
 
-**Cân nhắc Nghề nghiệp:**
-- Một công việc là sự cân bằng giữa **Đam mê**, **Trách nhiệm** và **Lợi ích** – đảm bảo cả ba đều có
-- Công việc đầu tiên có thể không trả lương cao nhất, nhưng nên cung cấp kinh nghiệm, mạng lưới, kiến thức và phát triển cá nhân
-- **Thời gian là đồng minh** – đừng vội vàng; hãy lập kế hoạch dài hạn
-
-**Tiêu chí Tuyển dụng (từ góc độ lãnh đạo):**
-1. **Thái độ** – quan trọng nhất
-2. **Năng lực** – kỹ năng kỹ thuật
-3. **Kinh nghiệm** – số năm làm việc
-4. **Trải nghiệm** – đa dạng vai trò và dự án
-5. **Tài năng** – khả năng bẩm sinh
-
-**Lời khuyên:**
-- Xây dựng dự án vượt yêu cầu học thuật – 10% thêm đó có giá trị trong phỏng vấn
-- Thành lập nhóm đa ngành (kỹ thuật, kinh doanh, tiếp thị) để thấy nhiều góc nhìn khác nhau
-- Tham gia hackathon và sự kiện cộng đồng – chúng xây dựng trải nghiệm và mạng lưới
-- Giữ sự kiên trì – học tập là một cuộc chạy marathon, không phải chạy nước rút
-
-**Suy nghĩ kết thúc:**
-> "May mắn không phải là điều xảy ra với bạn; nó được tạo ra bằng hành động. Bạn càng hành động nhiều, bạn càng may mắn hơn."
+**Bài học:** Amazon Q dân chủ hóa AI cho đội ngũ phi kỹ thuật – HR, Tài chính và Vận hành giờ đây có thể sử dụng AI một cách an toàn và hiệu quả.
 
 ### Bài học chính
 
 #### Góc độ kinh doanh
 
-- Áp dụng đám mây là không thể đảo ngược; doanh nghiệp đang đầu tư hàng tỷ đô la vào hạ tầng và nhân tài
-- Nhân tài Việt Nam cạnh tranh toàn cầu; trung tâm Việt Nam của NAB có nhiều nhân sự CNTT hơn Ấn Độ
-- Công việc được đảm bảo qua giới thiệu và cộng đồng, không chỉ qua bảng tin tuyển dụng công khai
-- Chọn ngành trọng tâm cùng với kỹ năng kỹ thuật – nó tạo sự khác biệt cho hồ sơ của bạn
-- Vai trò của AI là khuếch đại khả năng con người, không thay thế – nhu cầu về nhân tài senior đang tăng
+- AI không thay thế phán đoán con người mà khuếch đại nó – đặc biệt trong các lĩnh vực quan trọng (HR, bảo mật, vận hành)
+- Doanh nghiệp ưu tiên **bảo mật**, **tuân thủ** và **kiểm soát** – kết nối riêng tư và lưu trữ dữ liệu là điều bắt buộc
+- Trợ lý AI **Low-code/No-code** (như Amazon Q) trao quyền cho người dùng kinh doanh sử dụng AI mà không cần kỹ năng kỹ thuật sâu
+- **Thời gian đến giá trị** là quan trọng – các công cụ giảm nỗ lực thủ công (sàng lọc CV, điều tra sự cố) mang lại ROI ngay lập tức
 
 #### Góc độ kỹ thuật
 
-- Kiến thức nền tảng vững chắc (cơ sở dữ liệu, giải thuật, mạng) là quan trọng – đừng bao giờ bỏ qua phần cơ bản
-- Dữ liệu ngành công nghiệp lộn xộn, lớn và luôn thay đổi – kỹ thuật trong thế giới thực đòi hỏi xử lý lỗi, bảo mật và chi phí
-- Một khuôn khổ kiến trúc duy nhất (ví dụ: DNA nền tảng dữ liệu) hoạt động trên mọi nền tảng – học các khái niệm, không chỉ công cụ
-- Kiến trúc serverless và cloud-native đang trở thành tiêu chuẩn; học các dịch vụ AWS và cách áp dụng
-- Quan sát, giám sát và bảo mật là bắt buộc trong môi trường production
+- **Kiến trúc đa-agent** được ưa chuộng cho độ phức tạp doanh nghiệp nhờ kiểm soát, chi phí và chuyên môn hóa lĩnh vực
+- **Voice AI tiếng Việt** yêu cầu cách tiếp cận pipeline (STT → LLM → TTS) vì các mô hình end-to-end không hỗ trợ ngôn ngữ ít tài nguyên
+- **MCP (Model Context Protocol)** là yếu tố then chốt để tích hợp AI với hệ thống bên ngoài – thiết yếu cho áp dụng doanh nghiệp
+- **Kết nối riêng tư** là bắt buộc cho dịch vụ AI cấp production – tránh lộ API nội bộ ra internet công khai
+- **Streaming** là quan trọng cho tương tác thời gian thực – cả cho voice và chat
 
 #### Thực hành tốt nhất
 
-- **Bắt đầu từ vấn đề**, không phải giải pháp – hiểu ngữ cảnh kinh doanh trước
-- **Giao tiếp hiệu quả** – kỹ năng kỹ thuật không đủ; học cách nói chuyện với các bên liên quan kinh doanh
-- **Đầu tư vào bản thân** liên tục – lấy chứng chỉ, xây dựng dự án phụ, viết blog
-- **Đón nhận sai lầm** – chúng là cơ hội học tập, đặc biệt là đầu sự nghiệp
-- **Xây dựng mạng lưới** – tham gia sự kiện, đặt câu hỏi, kết nối với đồng nghiệp và người hướng dẫn
+- **Bắt đầu nhỏ** – xây dựng MVP giải quyết điểm đau thực tế, sau đó lặp lại dựa trên phản hồi
+- **Thiết kế với human-in-the-loop** – đặc biệt trong hệ thống quan trọng (AML, bảo mật, hạ tầng)
+- **Đầu tư vào khả năng quan sát** – AI agent chỉ tốt như dữ liệu chúng có thể truy cập
+- **Chọn kiến trúc phù hợp** – single vs. multi-agent phụ thuộc vào trường hợp sử dụng và ràng buộc chi phí
+- **Ưu tiên bảo mật từ ngày đầu** – quản trị dữ liệu và kiểm soát truy cập nên được tích hợp, không thêm sau
 
 ### Áp dụng vào công việc
 
-- **Áp dụng nguyên tắc đám mây** vào dự án hiện tại – sử dụng tầng miễn phí AWS để thử nghiệm Lambda, S3 và RDS
-- **Thực hành với dữ liệu thực** – mô phỏng dữ liệu lộn xộn từ API công khai và xây dựng pipeline ETL
-- **Nguyên mẫu hệ thống cấp production** – bao gồm xử lý lỗi, ghi log và biện pháp bảo mật
-- **Cải thiện kỹ năng giao tiếp** – thực hành giải thích khái niệm kỹ thuật cho khán giả phi kỹ thuật
-- **Áp dụng tư duy phát triển** – đặt mục tiêu đạt ít nhất một chứng chỉ AWS hoặc xây dựng dự án phụ mỗi học kỳ
-- **Tham gia sự kiện cộng đồng** (First Cloud AI Journey, Nhóm người dùng AWS) để kết nối và học hỏi
-- **Hướng dẫn người khác** – giảng dạy củng cố kiến thức của chính bạn
+- **Đánh giá kiến trúc đa-agent** cho dự án hiện tại – so sánh chi phí, độ phức tạp và tính linh hoạt với single agent
+- **Nguyên mẫu voice agent** sử dụng pipeline STT → LLM → TTS – bắt đầu với tiếng Anh hoặc mô hình tiếng Việt hiện có
+- **Thử nghiệm Amazon Q** – sử dụng tầng miễn phí để tự động hóa một luồng công việc nhỏ (ví dụ: tóm tắt email, tạo báo cáo)
+- **Cải thiện khả năng quan sát** trong hệ thống của bạn – đảm bảo logs, metrics và traces có sẵn cho AI agent
+- **Thực hiện kết nối riêng tư** nếu phát triển dịch vụ AI sử dụng nội bộ – tránh lộ API ra internet
+- **Áp dụng MCP** để kết nối AI agent với hệ thống hiện có (cơ sở dữ liệu, ticketing, HR)
 
 ### Trải nghiệm sự kiện
 
-Tham dự chuyến tham quan học tập **AWS: Enterprise Cloud Architectures and Industry Application** là một trải nghiệm mở mang tầm mắt, kết nối lý thuyết học thuật với thực hành ngành. Những trải nghiệm chính bao gồm:
+Tham dự **FCAJ Community Day - June 2026** là một chuyến tham quan sâu rộng về cách AI agent đang chuyển đổi vận hành doanh nghiệp. Những trải nghiệm chính bao gồm:
 
-#### Học hỏi từ chuyên gia ngành
-- Bài phát biểu của Nguyễn Gia Hưng cung cấp cái nhìn thực tế nhưng đầy động lực về thị trường lao động – tiêu chuẩn cao hơn bao giờ hết, nhưng cơ hội có nhiều cho những ai chuẩn bị
-- Hành trình của Bành Cẩm Vĩnh từ startup đến doanh nghiệp đến tư vấn minh họa tính đa dạng của vai trò kỹ thuật dữ liệu và tầm quan trọng của hiểu biết kinh doanh
-- Câu chuyện cá nhân của Như Trần về việc vượt qua nỗi sợ và nhiều lần bị từ chối để gia nhập AWS thật đầy cảm hứng
-- Góc nhìn của Khang Nguyễn với tư cách cựu sinh viên gần đây đã cung cấp lộ trình thực tế cho sinh viên hiện tại
+#### Học hỏi từ diễn giả đa dạng
+- Steve Trần chia sẻ hành trình từ lập trình viên đến nhà sáng lập, nhấn mạnh tầm quan trọng của việc giải quyết vấn đề thực tế và tìm khách hàng tiên phong
+- Phiên Voice AI nhấn mạnh những thách thức đặc biệt của ngôn ngữ Việt và cách tiếp cận pipeline thực tế
+- Trình diễn DevOps Agent cho thấy AI có thể giảm đáng kể thời gian xử lý sự cố – một lợi ích kinh doanh hữu hình
+- Phiên Amazon Q chứng minh AI không chỉ dành cho kỹ sư; HR và đội ngũ kinh doanh cũng có thể sử dụng nó
 
-#### Hiểu biết thực tế
-- Sự khác biệt giữa dự án trường học (sạch, nhỏ) và ngành công nghiệp (lộn xộn, lớn, thời gian thực) được làm rõ – tôi hiểu tại sao công ty coi trọng kinh nghiệm hơn điểm số
-- Khuôn khổ **DNA Nền tảng Dữ liệu** (Nhập liệu → Xử lý → Lưu trữ → Quản trị → Danh mục → Phân tích) là một mô hình tư duy có thể tái sử dụng
-- Nhận ra rằng giao tiếp và xây dựng mối quan hệ quan trọng như kỹ năng viết code
+#### Trải nghiệm kỹ thuật thực tế
+- Hiểu sự đánh đổi giữa kiến trúc đa-agent và single-agent
+- Học về MCP và cách tích hợp AI với API bên ngoài
+- Xem trình diễn trực tiếp AI agent trong hành động – từ điều tra sự cố đến sàng lọc CV
+- Khám phá tầm quan trọng của kết nối riêng tư cho bảo mật doanh nghiệp
 
 #### Công nghệ mới được khám phá
-- Dịch vụ AWS: Lambda, S3, Redshift, Kinesis, Bedrock, Amplify, Cognito, và nhiều hơn nữa
-- CI/CD, Infrastructure as Code (Terraform, CloudFormation), quan sát (CloudWatch, X-Ray)
-- Công cụ kỹ thuật dữ liệu: Airflow, dbt, Spark, và các giải pháp thay thế cloud-native
+- **AWS Bedrock** (mô hình nền tảng, guardrails)
+- **Amazon Q** (trợ lý AI agentic cho người dùng kinh doanh)
+- **DevOps Agent** (quản lý sự cố)
+- **MCP (Model Context Protocol)** cho tích hợp AI
+- **Voice AI** (STT, LLM, TTS) cho tiếng Việt
 
 #### Kết nối và thảo luận
-- Tương tác với đồng nghiệp từ cơ sở Swinburne Hồ Chí Minh và Cần Thơ
-- Các phiên hỏi đáp tiết lộ những lo ngại chung về khoảng cách kỹ năng, tác động của AI và lộ trình nghề nghiệp
-- Học được tầm quan trọng của tầm nhìn – đặt câu hỏi trong sự kiện giúp xây dựng kết nối
+- Tương tác với diễn giả và người tham dự trong các phiên hỏi đáp
+- Học về thách thức và giải pháp thực tế từ các ngành khác nhau (ngân hàng, bán lẻ, viễn thông)
+- Hiểu rằng áp dụng AI khác nhau theo ngành – một số tiên tiến hơn, số khác mới bắt đầu
 
 #### Bài học rút ra
-- Tôi cần đầu tư nhiều hơn vào kiến thức nền tảng – đây là kỹ năng giúp tôi khác biệt so với AI
-- Tôi cần xây dựng dự án giải quyết vấn đề kinh doanh thực tế, không chỉ bài tập học thuật
-- Tôi nên chủ động tìm kiếm cơ hội thực hành nói trước đám đông và kết nối
-- Thị trường lao động cạnh tranh, nhưng kiên trì và học tập liên tục sẽ có kết quả
+- **AI là hệ số nhân lực**, không phải thay thế – nó khuếch đại kỹ năng của những người sử dụng tốt
+- **Bảo mật và tuân thủ** là quan trọng cho áp dụng doanh nghiệp – kết nối riêng tư và lưu trữ dữ liệu là điều bắt buộc
+- **Kiến trúc đa-agent** cung cấp kiểm soát và tối ưu chi phí tốt hơn hệ thống single-agent
+- **Xây dựng sản phẩm AI** cho doanh nghiệp đòi hỏi kiên nhẫn và cộng tác chặt chẽ với khách hàng
 
 #### Hình ảnh sự kiện
-![Speaker presentation](/images/3-Event/Event2/Swinburne_Cloud_Mastery_2026.png)
+![Speaker presentation](/images/3-Event/Event3/event3.png)

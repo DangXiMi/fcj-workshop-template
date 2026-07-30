@@ -5,36 +5,40 @@ weight: 1
 chapter: false
 ---
 
-# Báo cáo thực tập
+    
+# Võ Lê Hải Đăng - Báo cáo thực tập
+
+
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Văn A
+&emsp; **Họ và tên:** Võ Lê Hải Đăng
 
-&emsp; **Số điện thoại:** 0989888999
+&emsp; **Nhóm:** 2D
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Số điện thoại:** 0783225814
 
-&emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
+&emsp; **Email:** dangvo77lagi@gmail.com
 
-&emsp; **Ngành:** Công nghệ thông tin
+&emsp; **Trường đại học:** Đại học Bách Khoa Thành phố Hồ Chí Minh
 
-&emsp; **Lớp:** AWS082025
+&emsp; **Chuyên ngành:** Khoa học Máy tính
 
-&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
+&emsp; **Lớp:** CC23KHM1
+
+&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Việt Nam
 
 &emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
+&emsp; **Thời gian thực tập:** Từ 01/06/2026 đến 31/07/2026
 
-![Ảnh đại diện của bạn](/images/avatar.png)
-
-
+![Ảnh đại diện của bạn](/images/Avatar.png)
 
 ### Nội dung báo cáo
 
-1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
-3.  [Các bài blogs đã đăng](3-BlogsPosted/)
-4.  [Các events đã tham gia](4-EventParticipated/)
-5.  [Workshop](5-Workshop/)
+1.  [Nhật ký công việc](1-Worklog/)
+2.  [Đề xuất dự án](2-Proposal/)
+3.  [Bài viết đã đăng](3-BlogsPosted/)
+4.  [Sự kiện đã tham gia](4-EventParticipated/)
+5.  [Hướng dẫn thực hành](5-Workshop/)
 6.  [Tự đánh giá](6-Self-evaluation/)
-7.  [Chia sẻ, đóng góp ý kiến](7-Feedback/)
+7.  [Chia sẻ và phản hồi](7-Feedback/)
+8.  [Tài liệu tham khảo](8-References/)

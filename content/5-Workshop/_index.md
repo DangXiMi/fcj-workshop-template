@@ -4,28 +4,35 @@ date: 2024-01-01
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
+includeInReport: false
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+
+# Student Performance Early Warning System on AWS
 
 #### Overview
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+The **Student Performance Early Warning System (SP-EWS)** is a cloud-native Information System built entirely on AWS. It ingests academic and behavioral data of students, predicts which students are at academic risk using a Machine Learning model, and presents the results through a Decision-Support-System (DSS) style dashboard with automated email alerts for high-risk students.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+In this workshop, you will build the system end-to-end using AWS serverless and managed services. You will start from an empty AWS account and progressively deploy:
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
++ A **serverless data pipeline** that ingests a CSV dataset into DynamoDB.
++ A **REST API** built with API Gateway and Lambda.
++ A **React dashboard** hosted on Amazon S3 and delivered through Amazon CloudFront.
++ A **Machine Learning inference workflow** using an Amazon SageMaker endpoint (XGBoost) for batch and on-demand risk prediction.
++ **Email alerting** with Amazon SNS and **observability** with Amazon CloudWatch.
++ A complete **cleanup** procedure to avoid unnecessary charges.
+
+The project follows the AWS Well-Architected Framework and covers architecture, deployment, ML integration, monitoring, security, cost optimization, testing, and cleanup.
+
+{{< figure src="/images/5-Workshop/5.1-Workshop-overview/Solution_Archi.jpg" width="800" >}}
 
 #### Content
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+1. [Workshop Overview](5.1-workshop-overview/)
+2. [Prerequisites](5.2-prerequiste/)
+3. [Core Backend & Data Pipeline](5.3-Backend-Pipeline/)
+4. [Frontend Dashboard & CloudFront](5.4-Frontend-CloudFront/)
+5. [Machine Learning Integration](5.5-ML-Integration/)
+6. [Monitoring & Alerts](5.6-Monitoring-Alerts/)
+7. [Clean up](5.7-Cleanup/)

@@ -15,27 +15,27 @@ Các báo cáo theo tuần dưới đây ghi lại mục tiêu, nhiệm vụ, th
 ### Phân chia các tuần
 
 **Tuần 1:** [Nền tảng AWS & Machine Learning Essentials](1.1-week1/)  
-*(15/06 – 21/06)* – Thiết lập môi trường AWS, khám phá stack AI/ML và bắt đầu SageMaker.
+*(01/06 – 07/06)* – Thiết lập môi trường AWS, khám phá stack AI/ML và bắt đầu SageMaker.
 
 **Tuần 2:** [Serverless AI – Lambda & Tích hợp API](1.2-week2/)  
-*(22/06 – 28/06)* – Xây dựng backend serverless, sử dụng Lambda, API Gateway, DynamoDB, SAM và Cognito.
+*(08/06 – 14/06)* – Xây dựng backend serverless, sử dụng Lambda, API Gateway, DynamoDB, SAM và Cognito.
 
 **Tuần 3:** [Phân tích dữ liệu & Business Intelligence](1.3-week3/)  
-*(29/06 – 05/07)* – Làm việc với Athena, Glue, QuickSight và PostgreSQL nâng cao trên RDS.
+*(15/06 – 21/06)* – Làm việc với Athena, Glue, QuickSight và PostgreSQL nâng cao trên RDS.
 
 **Tuần 4:** [AWS AI Services & Bảo mật](1.4-week4/)  
-*(06/07 – 12/07)* – Tích hợp Rekognition, Comprehend, Translate, Polly và xử lý bảo mật/quản trị.
+*(22/06 – 28/06)* – Tích hợp Rekognition, Comprehend, Translate, Polly và xử lý bảo mật/quản trị.
 
 **Tuần 5:** [SageMaker nâng cao & MLOps](1.5-week5/)  
-*(13/07 – 19/07)* – Khám phá Feature Store, Pipelines, Model Registry, Clarify và Edge Manager.
+*(29/06 – 05/07)* – Khám phá Feature Store, Pipelines, Model Registry, Clarify và Edge Manager.
 
 **Tuần 6:** [CI/CD & Infrastructure as Code](1.6-week6/)  
-*(20/07 – 26/07)* – Triển khai CodePipeline, CloudFormation và AWS CDK cho tự động hóa.
+*(06/07 – 12/07)* – Triển khai CodePipeline, CloudFormation và AWS CDK cho tự động hóa.
 
 **Tuần 7:** [Kiến trúc hướng sự kiện & Điều phối Workflow](1.7-week7/)  
-*(27/07 – 02/08)* – Làm chủ EventBridge, Step Functions, SQS và SNS cho hệ thống AI phản ứng.
+*(13/07 – 19/07)* – Làm chủ EventBridge, Step Functions, SQS và SNS cho hệ thống AI phản ứng.
 
 **Tuần 8:** [Dự án cuối khóa & Tổng hợp](1.8-week8/)  
-*(03/08 – 14/08)* – Xây dựng một ứng dụng AI end‑to‑end, tích hợp các dịch vụ đã học và thuyết trình cuối khóa.
+*(20/07 – 26/07)* – Xây dựng một ứng dụng AI end‑to‑end, tích hợp các dịch vụ đã học và thuyết trình cuối khóa.
 
 ---
