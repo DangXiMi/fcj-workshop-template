@@ -1,57 +1,59 @@
 ---
 title: "Week 3 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-06-29
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 3 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Build skills in data analytics and business intelligence on AWS
+* Master serverless analytics with Amazon Athena
+* Understand AWS Glue for ETL and data cataloging
+* Create visual dashboards with Amazon QuickSight
+* Explore PostgreSQL on AWS (Advanced)
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks Carried Out This Week:
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 1 | **Data Analytics Services Overview:** <br>&emsp; + Compare AWS analytics services (Athena, Glue, EMR, Redshift, QuickSight) <br>&emsp; + Understand use cases for each | 29/06/2026 | 29/06/2026 | Analytics Module |
+| 2 | **Serverless Analytics with Amazon Athena:** <br>&emsp; + Create Athena tables from S3 data <br>&emsp; + Write SQL queries on CSV/Parquet/JSON <br>&emsp; + Partition data for performance optimization | 30/06/2026 | 30/06/2026 | Athena Workshop |
+| 3 | **AWS Glue:** <br>&emsp; + Crawlers and Data Catalog <br>&emsp; + ETL jobs using PySpark/Spark <br>&emsp; + Job bookmarks and scheduling | 01/07/2026 | 01/07/2026 | Glue Documentation |
+| 4 | **Business Intelligence with Amazon QuickSight:** <br>&emsp; + Connect to Athena and S3 data sources <br>&emsp; + Build visualizations and dashboards <br>&emsp; + Share insights with stakeholders | 02/07/2026 | 02/07/2026 | QuickSight Workshop |
+| 5 | **Advanced PostgreSQL on AWS - Part 1:** <br>&emsp; + Managed PostgreSQL with Amazon RDS <br>&emsp; + Performance tuning and monitoring <br>&emsp; + Read replicas and Multi-AZ deployment | 03/07/2026 | 03/07/2026 | PostgreSQL Series |
+| 6 | **Advanced PostgreSQL on AWS - Part 2:** <br>&emsp; + Migration strategies (DMS) <br>&emsp; + High availability and disaster recovery <br>&emsp; + Extensions and stored procedures | 04/07/2026 | 04/07/2026 | PostgreSQL Series |
 
 ### Week 3 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### ✅ Data Analytics Foundations
+* Understood the AWS analytics ecosystem and when to use each service
+* Created Athena queries to analyze data stored in S3
+* Optimized query performance with partitioning and bucketing
+* Integrated Athena with QuickSight for ad‑hoc reporting
 
-* Successfully created and configured an AWS Free Tier account.
+#### ✅ AWS Glue ETL
+* Set up Glue Data Catalog by running crawlers
+* Wrote ETL jobs in PySpark to transform data (filter, aggregate, join)
+* Automated job execution with triggers and schedules
+* Used job bookmarks to process incremental data
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+#### ✅ Amazon QuickSight
+* Connected to Athena as a data source
+* Created interactive dashboards with:
+  - Bar charts, line graphs, heat maps
+  - Filters and parameters for user‑driven analysis
+  - Calculated fields and aggregations
+* Published dashboards and shared with team
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+#### ✅ PostgreSQL on AWS
+* Launched a production‑ready RDS PostgreSQL instance
+* Configured Multi‑AZ for high availability
+* Set up read replicas for read scaling
+* Monitored performance with Performance Insights and CloudWatch
+* Explored common extensions like `pg_stat_statements` and `postgis`
 
-* Used AWS CLI to perform basic operations such as:
+### Key Learning Outcomes:
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+> **Key Insight:** Data analytics is crucial for AI projects to understand data quality, perform exploratory analysis, and monitor model performance. Serverless tools like Athena and Glue enable cost‑effective, scalable analytics without infrastructure management.

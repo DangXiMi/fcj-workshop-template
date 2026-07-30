@@ -1,57 +1,58 @@
 ---
 title: "Week 6 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-07-20
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Implement CI/CD for AI/ML applications using AWS CodePipeline
+* Automate build, test, and deployment of ML models
+* Integrate with AWS CodeBuild and CodeDeploy
+* Understand DevOps practices for MLOps
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks Carried Out This Week:
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 1 | **CI/CD Pipeline with AWS CodePipeline:** <br>&emsp; + Source stage (CodeCommit, GitHub) <br>&emsp; + Build stage (CodeBuild) <br>&emsp; + Deploy stage (CodeDeploy or custom) | 20/07/2026 | 20/07/2026 | CodePipeline Docs |
+| 2 | **Automated Deployments with AWS CodePipeline:** <br>&emsp; + Integrate with SageMaker Pipelines <br>&emsp; + Trigger retraining on data changes <br>&emsp; + Deploy new models to endpoints | 21/07/2026 | 21/07/2026 | CI/CD Workshop |
+| 3 | **DevOps with AWS CodePipeline:** <br>&emsp; + Use pipeline variables and artifacts <br>&emsp; + Add manual approval gates <br>&emsp; + Notifications and monitoring | 22/07/2026 | 22/07/2026 | DevOps with CodePipeline |
+| 4 | **Infrastructure as Code with AWS CloudFormation:** <br>&emsp; + Design and deploy infrastructure stacks <br>&emsp; + Use parameters, outputs, and conditions <br>&emsp; + Manage stack updates and rollbacks | 23/07/2026 | 23/07/2026 | CloudFormation |
+| 5 | **AWS CDK Essentials:** <br>&emsp; + Define infrastructure using TypeScript/Python <br>&emsp; + Create reusable constructs <br>&emsp; + Deploy stacks with CDK CLI | 24/07/2026 | 24/07/2026 | CDK Workshop |
+| 6 | **Infrastructure as Code for ECS with CDK:** <br>&emsp; + Deploy containerized ML applications <br>&emsp; + Use CDK Pipelines for CI/CD | 25/07/2026 | 25/07/2026 | CDK for ECS |
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### ✅ CI/CD with CodePipeline
+* Set up a pipeline with source (CodeCommit), build (CodeBuild), and deploy stages
+* Integrated CodeBuild with Docker to build and push containers
+* Deployed containerized applications to ECS/Fargate and SageMaker endpoints
+* Added manual approval steps for production deployment
 
-* Successfully created and configured an AWS Free Tier account.
+#### ✅ Automated ML Workflows
+* Triggered SageMaker Pipeline execution from CodePipeline when new data arrives
+* Used pipeline artifacts to pass model artifacts between stages
+* Deployed approved models automatically to staging and production
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+#### ✅ Infrastructure as Code
+* Learned CloudFormation: templates, stack operations, drift detection
+* Created CloudFormation templates for:
+  - VPC, subnets, security groups
+  - SageMaker endpoints and IAM roles
+  - Lambda functions and API Gateway
+* Migrated to AWS CDK:
+  - Defined stacks in Python
+  - Used L2 constructs for higher‑level abstraction
+  - Synthesized and deployed stacks
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+#### ✅ CDK Pipelines
+* Built a CI/CD pipeline using CDK Pipelines
+* Multi‑stage deployment (dev → test → prod)
+* Automated infrastructure provisioning with every commit
 
-* Used AWS CLI to perform basic operations such as:
+### Key Learning Outcomes:
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+> **Key Insight:** CI/CD and Infrastructure as Code are essential for reliable, repeatable ML deployments. Using CodePipeline and CDK enables teams to treat ML models as code, with versioning, testing, and automated rollouts, reducing manual errors and speeding up delivery.

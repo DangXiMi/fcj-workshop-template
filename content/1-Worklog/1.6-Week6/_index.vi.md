@@ -1,58 +1,58 @@
 ---
-title: "Worklog Tuần 6"
-date: 2024-01-01
-weight: 1
+title: "Week 6 Worklog"
+date: 2026-07-20
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 6:
 
-### Mục tiêu tuần 6:
+* Triển khai CI/CD cho ứng dụng AI/ML sử dụng AWS CodePipeline.
+* Tự động hóa việc build, test và triển khai model ML.
+* Tích hợp với AWS CodeBuild và CodeDeploy.
+* Hiểu các thực hành DevOps cho MLOps.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Nhiệm vụ thực hiện trong tuần:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 1 | **CI/CD Pipeline với AWS CodePipeline:** <br>&emsp; + Stage Source (CodeCommit, GitHub) <br>&emsp; + Stage Build (CodeBuild) <br>&emsp; + Stage Deploy (CodeDeploy hoặc custom) | 20/07/2026 | 20/07/2026 | CodePipeline Docs |
+| 2 | **Triển khai tự động với AWS CodePipeline:** <br>&emsp; + Tích hợp với SageMaker Pipelines <br>&emsp; + Kích hoạt retraining khi dữ liệu thay đổi <br>&emsp; + Triển khai model mới lên endpoint | 21/07/2026 | 21/07/2026 | CI/CD Workshop |
+| 3 | **DevOps với AWS CodePipeline:** <br>&emsp; + Sử dụng pipeline variable và artifact <br>&emsp; + Thêm manual approval gate <br>&emsp; + Thông báo và giám sát | 22/07/2026 | 22/07/2026 | DevOps with CodePipeline |
+| 4 | **Hạ tầng như mã với AWS CloudFormation:** <br>&emsp; + Thiết kế và triển khai stack <br>&emsp; + Sử dụng Parameter, Output, Condition <br>&emsp; + Quản lý cập nhật và rollback | 23/07/2026 | 23/07/2026 | CloudFormation |
+| 5 | **AWS CDK Essentials:** <br>&emsp; + Định nghĩa hạ tầng bằng TypeScript/Python <br>&emsp; + Tạo construct tái sử dụng <br>&emsp; + Triển khai stack với CDK CLI | 24/07/2026 | 24/07/2026 | CDK Workshop |
+| 6 | **Infrastructure as Code cho ECS với CDK:** <br>&emsp; + Triển khai ứng dụng ML đóng gói container <br>&emsp; + Sử dụng CDK Pipelines cho CI/CD | 25/07/2026 | 25/07/2026 | CDK for ECS |
 
+### Thành tựu đạt được Tuần 6:
 
-### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### ✅ CI/CD với CodePipeline
+* Thiết lập pipeline với source (CodeCommit), build (CodeBuild) và deploy.
+* Tích hợp CodeBuild với Docker để build và push container.
+* Triển khai ứng dụng container lên ECS/Fargate và SageMaker endpoint.
+* Thêm manual approval cho giai đoạn production.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+#### ✅ Tự động hóa luồng ML
+* Kích hoạt SageMaker Pipeline từ CodePipeline khi có dữ liệu mới.
+* Sử dụng artifact để truyền model giữa các stage.
+* Tự động triển khai model đã được phê duyệt lên staging và production.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+#### ✅ Hạ tầng như mã (IaC)
+* Học CloudFormation: template, stack, drift detection.
+* Tạo CloudFormation template cho:
+  - VPC, subnet, security group.
+  - SageMaker endpoint và IAM role.
+  - Lambda và API Gateway.
+* Chuyển sang AWS CDK:
+  - Định nghĩa stack bằng Python.
+  - Sử dụng L2 construct để trừu tượng hóa cao hơn.
+  - Synthesize và deploy stack.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+#### ✅ CDK Pipelines
+* Xây dựng pipeline CI/CD bằng CDK Pipelines.
+* Triển khai đa môi trường (dev → test → prod).
+* Tự động cung cấp hạ tầng sau mỗi lần commit.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+### Bài học kinh nghiệm chính:
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+> **Điểm nhấn:** CI/CD và IaC là yếu tố then chốt cho việc triển khai ML đáng tin cậy và lặp lại. Sử dụng CodePipeline và CDK cho phép team xem model ML như mã nguồn, với quy trình versioning, kiểm thử và triển khai tự động, giảm thiểu lỗi thủ công và tăng tốc độ phát hành.

@@ -1,59 +1,56 @@
 ---
-title: "Worklog Tuần 1"
-date: 2024-01-01
+title: "Week 1 Worklog"
+date: 2026-06-15
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 1:
 
-### Mục tiêu tuần 1:
+* Làm quen với các thành viên của First Cloud AI Journey và hiểu cấu trúc chương trình thực tập.
+* Thiết lập môi trường AWS và nắm vững các dịch vụ AWS cơ bản.
+* Bắt đầu lộ trình Machine Learning Essentials.
+* Hiểu tổng quan về các dịch vụ AI/ML trên AWS.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Nhiệm vụ thực hiện trong tuần:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 1 | - Giới thiệu team và buổi onboarding <br> - Xem lại nội quy, quy chế đơn vị thực tập <br> - Truy cập tài liệu trên nền tảng Cloud Journey | 15/06/2026 | 15/06/2026 | [Cloud Journey Platform](https://cloudjourney.awsstudygroup.com/) |
+| 2 | - Tạo tài khoản AWS Free Tier (nếu chưa có) <br> - Thiết lập AWS Budgets để quản lý chi phí <br> - Cấu hình IAM user và role theo nguyên tắc phân quyền tối thiểu | 16/06/2026 | 16/06/2026 | AWS IAM Documentation |
+| 3 | - **Machine Learning Essentials:** <br>&emsp; + Hiểu vòng đời ML (chuẩn bị dữ liệu → huấn luyện → đánh giá → triển khai) <br>&emsp; + Khám phá stack AI/ML của AWS (AI Services, ML Services, ML Frameworks) <br>&emsp; + Tìm hiểu khả năng và use case của SageMaker | 17/06/2026 | 17/06/2026 | ML Essentials Module |
+| 4 | - **Amazon SageMaker Immersion Day – Phần 1:** <br>&emsp; + Thiết lập và làm quen SageMaker Studio <br>&emsp; + Tổng quan về các thuật toán built‑in <br>&emsp; + Gán nhãn dữ liệu với Ground Truth | 18/06/2026 | 18/06/2026 | SageMaker Documentation |
+| 5 | - **Amazon SageMaker Immersion Day – Phần 2:** <br>&emsp; + Cấu hình và giám sát training job <br>&emsp; + Tối ưu siêu tham số (Hyperparameter Tuning) <br>&emsp; + Triển khai model lên endpoint | 19/06/2026 | 19/06/2026 | SageMaker Workshop |
+| 6 | - **Data Lake Fundamentals on AWS:** <br>&emsp; + Hiểu kiến trúc Data Lake <br>&emsp; + S3 làm kho lưu trữ Data Lake <br>&emsp; + Glue Catalog và các ETL job | 20/06/2026 | 20/06/2026 | Data Lake Module |
 
+### Thành tựu đạt được Tuần 1:
 
-### Kết quả đạt được tuần 1:
+#### ✅ Nền tảng AWS
+* Tạo và cấu hình thành công tài khoản AWS Free Tier kèm cảnh báo ngân sách.
+* Thiết lập IAM user, group và policy theo các best practice về bảo mật.
+* Nắm được hạ tầng toàn cầu của AWS (Region, Availability Zone, Edge Location).
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### ✅ Machine Learning Essentials
+* Hiểu toàn bộ luồng công việc ML trên AWS từ đầu đến cuối.
+* Khám phá stack AI/ML của AWS:
+  * **AI Services** (các model đã được huấn luyện sẵn): Rekognition, Comprehend, Polly, Translate.
+  * **ML Services** (nền tảng): SageMaker, Forecast, Personalize.
+  * **ML Frameworks** (công cụ): TensorFlow, PyTorch, MXNet, scikit‑learn.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+#### ✅ Amazon SageMaker cơ bản
+* **SageMaker Studio:** Khởi chạy và cấu hình môi trường phát triển tích hợp.
+* **Built‑in Algorithms:** Tìm hiểu các thuật toán có sẵn: Linear Learner, XGBoost, K‑Means, Deep Learning (Computer Vision, NLP).
+* **Gán nhãn dữ liệu:** Tạo labeling job với Ground Truth (thủ công và tự động).
+* **Huấn luyện:** Cấu hình và giám sát training job.
+* **Tối ưu siêu tham số:** Tạo tuning job với các dải giá trị chỉ định.
+* **Triển khai model:** Deploy thành công model đã huấn luyện lên real‑time endpoint.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+#### ✅ Khái niệm Data Lake
+* Nắm được nguyên lý kiến trúc Data Lake.
+* Tạo S3 bucket với chính sách vòng đời phù hợp.
+* Tìm hiểu AWS Glue Crawler và Data Catalog.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Bài học kinh nghiệm chính:
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+> **Điểm nhấn:** AWS SageMaker cung cấp một nền tảng fully managed để xây dựng, huấn luyện và triển khai model ML ở quy mô lớn. Sự tích hợp giữa chuẩn bị dữ liệu (Glue), huấn luyện (SageMaker) và triển khai tạo nên một pipeline ML hoàn chỉnh, từ đầu đến cuối.

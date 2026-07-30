@@ -23,9 +23,9 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "Internship Report"
+title = "Vo Le Hai Dang - Internship Report"
 weight = 1
-languageName = "English"
+label = "English"
 
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
@@ -42,7 +42,7 @@ weight = 20
 [Languages.vi]
 title = "Báo cáo thực tập"
 weight = 2
-languageName = "Tiếng Việt"
+label = "Tiếng Việt"
 
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
@@ -60,3 +60,7 @@ weight = 20
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[security]
+  [security.funcs]
+    getJSON = ['^https://api\.github\.com/']

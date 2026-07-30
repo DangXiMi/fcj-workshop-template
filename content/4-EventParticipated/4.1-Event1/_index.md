@@ -6,121 +6,170 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
-
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Provide real-world insights into Data Analyst and DevOps roles in the industry
+- Bridge the gap between academic learning and enterprise expectations
+- Share practical experiences and career advice from industry practitioners
+- Discuss the importance of company culture in career decisions
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Data Analyst Speaker** 
+- **DevOps Engineer Speaker** 
+- **Operation Engineer Speaker** 
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Part 1: The Real Work of a Data Analyst
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+**Beyond the Numbers – Data as Storytelling:**
+- A Data Analyst is not just someone who works with data—they are the ones who **tell the story behind the data**
+- The technical skill (SQL, Python, BI tools) is just the foundation; the real value is translating data into actionable business insights
+- A good data analyst understands the business context and can answer: "What does this data mean for our business?"
 
-#### Transitioning to modern application architecture – Microservices
+**Career Progression Phases:**
+- **Junior Data Analyst:**
+  - Works with direct, clear guidelines and well-defined tasks
+  - Focuses on execution: writing queries, building dashboards, following established processes
+  - Needs close supervision and mentorship
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- **Senior Data Analyst:**
+  - Can work with guidelines but adds their own understanding and judgment
+  - Proactively identifies patterns, anomalies, and opportunities
+  - Communicates insights to stakeholders without requiring explicit instruction
+  - Takes ownership of the analysis process from data collection to final recommendations
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+- **Lead Data Analyst / Principal:**
+  - Defines the data strategy for the team/department
+  - Mentors junior analysts and sets best practices
+  - Aligns data initiatives with business objectives
+  - Translates complex technical concepts into business language for leadership
 
-#### Domain-Driven Design (DDD)
+**Key Skills for a Data Analyst:**
+- **Technical**: SQL, Python/R, data visualization (Tableau, Power BI, Looker), statistical analysis
+- **Business acumen**: Understanding of the industry, domain, and business metrics
+- **Communication**: Storytelling, presentation, and stakeholder management
+- **Critical thinking**: Ability to ask the right questions and challenge assumptions
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+**Industry vs. Academia:**
+- Academic projects often use clean, pre-processed datasets with clear objectives
+- Real-world data is messy, incomplete, and constantly changing
+- The real challenge is not the analysis itself but gathering, cleaning, and understanding the data context
 
-#### Event-Driven Architecture
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### Part 2: Company Culture – Why It Matters
 
-#### Compute Evolution
+**The Hidden Factor in Hiring:**
+- You may not get hired because of a lack of skills, but also because of a **lack of cultural fit**
+- A "not fit" decision is often about values, communication styles, and working preferences, not competence
+- Companies are increasingly prioritizing cultural alignment because:
+  - It reduces turnover and improves retention
+  - It enhances team collaboration and productivity
+  - It creates a more positive and sustainable work environment
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+**Why Company Culture is Important:**
+- **Values alignment**: When your personal values match the company's, work becomes more meaningful and fulfilling
+- **Work style compatibility**: Some companies are fast-paced and agile; others are structured and process-driven—choose based on your natural style
+- **Growth opportunities**: Culture determines whether you'll be supported in your learning and career progression
+- **Psychological safety**: A healthy culture allows you to speak up, take risks, and learn from failures
+- **Team dynamics**: You spend 8+ hours daily with colleagues; a toxic culture can burn you out faster than a difficult technical challenge
 
-#### Amazon Q Developer
+**How to Assess Culture During Interviews:**
+- Ask questions like: "How does your team handle conflict?", "What does success look like in the first 90 days?", "How does the company support learning and growth?"
+- Pay attention to how people treat each other during the interview process
+- Research the company's values and see if they resonate with you
+- Consider asking: "Is this a place where I can be my authentic self?"
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+#### Part 3: The DevOps Life – Beyond CI/CD
+
+**DevOps ≠ CI/CD:**
+- Many people assume DevOps is just about CI/CD pipelines—it's much broader
+- DevOps is a **culture and practice** that spans the entire software delivery lifecycle
+- It includes **infrastructure as code (IaC)**, **monitoring**, **security**, **incident management**, and **reliability engineering**
+
+**Becoming a DevOps Engineer:**
+- You don't need a specific degree to enter DevOps—many come from backgrounds like automation, system administration, or software development
+- A background in **Automation** is particularly valuable—understanding how to automate repetitive tasks is a core DevOps skill
+- DevOps requires a **full-stack mindset**: understanding code, infrastructure, networking, and security
+
+**Key Tools in the DevOps Toolkit:**
+- **CI/CD**: Jenkins, GitLab CI, GitHub Actions, AWS CodePipeline
+- **Infrastructure as Code**: Terraform, AWS CloudFormation, Ansible
+- **Containerization**: Docker, Kubernetes
+- **Monitoring & Observability**: Prometheus, Grafana, AWS CloudWatch, Datadog, New Relic
+- **Logging**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
+- **Version Control**: Git, GitHub, GitLab
+- **Scripting**: Python, Bash, Groovy
+
+**The Critical Skill – Incident Resolution:**
+- When a production issue occurs, the pressure is intense
+- A DevOps engineer must:
+  1. **Stay calm** and assess the situation systematically
+  2. **Gather evidence** from logs, metrics, and traces
+  3. **Identify the root cause** using tools and intuition
+  4. **Implement a fix** (rollback, patch, scale)
+  5. **Document** the incident for future prevention
+  6. **Communicate** clearly with stakeholders and management
+
+
+**The DevOps Mindset:**
+- **Automation first**: If you do something twice, automate it the third time
+- **Blame-free post-mortems**: Focus on the process, not the person
+- **Continuous improvement**: Always ask, "How can we make this better?"
+- **Collaboration**: DevOps breaks down silos between dev and ops teams
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Business Perspective
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- Data Analysts are storytellers who translate complex data into business value—communication skills are as important as technical skills
+- Company culture is a critical factor in hiring decisions and career satisfaction—don't underestimate its importance
+- DevOps is not just a job title; it's a culture of collaboration, automation, and continuous improvement
 
-#### Technical Architecture
+#### Technical Perspective
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- Data analysis in industry requires handling messy, large-scale data—be prepared for data engineering work
+- DevOps is a diverse field requiring knowledge of CI/CD, IaC, containers, monitoring, networking, and security
+- Incident resolution is the "moment of truth" for DevOps engineers—practice systematic troubleshooting
 
-#### Modernization Strategy
+#### Best Practices
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- **Data Analysts**: Focus on storytelling and business communication—technical skills are table stakes
+- **Job Seekers**: Evaluate company culture as much as the role—you can't be successful in a toxic environment
+- **DevOps Engineers**: Automate everything, document incidents, and focus on preventing failures, not just fixing them
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **As a Data Analyst**: Practice presenting data insights in a story format—write blog posts or create case studies
+- **As a DevOps Learner**: Build a full CI/CD pipeline with monitoring and logging for a side project
+- **For Career Decisions**: Define your personal values and assess company culture before accepting offers
+- **For Skill Development**: Learn at least one tool from each DevOps category (CI/CD, IaC, container, monitoring)
+- **Practice Incident Response**: Simulate production outages in a sandbox environment to build confidence
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending the **FCAJ Community Day – Data & DevOps Insights** provided a practical look into two critical enterprise roles and the importance of company culture. Key experiences included:
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Learning from speakers
+- The Data Analyst session challenged the misconception that analysts just "work with data"—they are storytellers who bridge the gap between raw numbers and business decisions
+- The company culture discussion highlighted that hiring is not just about skills—it's about finding the right fit for the organization
+- The DevOps session revealed that the role is much broader than CI/CD pipelines, requiring a diverse toolset and a calm, systematic approach to incident resolution
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Practical insights
+- The career progression phases for Data Analysts (Junior → Senior → Lead) provided a clear roadmap for growth
+- Real-world incident resolution demo showed how DevOps engineers handle production issues under pressure
+- The importance of automation-first thinking was reinforced—if you do something more than once, automate it
 
 #### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+- Q&A sessions revealed shared challenges among attendees: entering the industry, building skills, and finding the right company culture
+- The emphasis on cultural fit resonated—many agreed that they'd rather work in a positive culture than a high-paying but toxic environment
 
 #### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+- As a data professional, I need to improve my storytelling skills alongside my technical toolkit
+- I should evaluate company culture as carefully as the role itself—it impacts my long-term career satisfaction
+- DevOps is a fascinating field that requires both broad knowledge and deep specialization—I need to start building my toolkit
 
 #### Some event photos
-*Add your event photos here*  
+![Speaker presentation](/images/3-Event/Event1/event.jpeg)
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.

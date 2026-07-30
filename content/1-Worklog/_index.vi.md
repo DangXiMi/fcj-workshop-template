@@ -1,40 +1,41 @@
 ---
-title: "Nhật ký công việc"
-date: 2024-01-01
+title: "Worklog"
+date: 2026-06-15
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+Trong giai đoạn này, tôi đã theo một lộ trình học tập có cấu trúc, tập trung vào **AI/ML trên AWS**, bao gồm các dịch vụ nền tảng cơ bản cho đến MLOps nâng cao và ứng dụng serverless AI. Mỗi tuần được dành cho một chủ đề cụ thể, kết hợp giữa các buổi thực hành, workshop và làm dự án thực tế.
 
-**Trong trang này** bạn sẽ cần giới thiệu worklog của bạn **như thế nào**? Bạn hoàn thành chương trình trong vòng **bao nhiêu tuần**? Bạn **đã làm gì** trong các tuần đó?
+Các báo cáo theo tuần dưới đây ghi lại mục tiêu, nhiệm vụ, thành tựu và bài học kinh nghiệm chính của từng giai đoạn trong chương trình.
 
+---
 
-Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:
+### Phân chia các tuần
 
-**Tuần 1:** [Làm quen với AWS và các dịch vụ cơ bản trong AWS](1.1-week1/)
+**Tuần 1:** [Nền tảng AWS & Machine Learning Essentials](1.1-week1/)  
+*(15/06 – 21/06)* – Thiết lập môi trường AWS, khám phá stack AI/ML và bắt đầu SageMaker.
 
-**Tuần 2:** [Làm công việc A...](1.2-week2/)
+**Tuần 2:** [Serverless AI – Lambda & Tích hợp API](1.2-week2/)  
+*(22/06 – 28/06)* – Xây dựng backend serverless, sử dụng Lambda, API Gateway, DynamoDB, SAM và Cognito.
 
-**Tuần 3:** [Làm công việc B...](1.3-week3/)
+**Tuần 3:** [Phân tích dữ liệu & Business Intelligence](1.3-week3/)  
+*(29/06 – 05/07)* – Làm việc với Athena, Glue, QuickSight và PostgreSQL nâng cao trên RDS.
 
-**Tuần 4:** [Làm công việc C...](1.4-week4/)
+**Tuần 4:** [AWS AI Services & Bảo mật](1.4-week4/)  
+*(06/07 – 12/07)* – Tích hợp Rekognition, Comprehend, Translate, Polly và xử lý bảo mật/quản trị.
 
-**Tuần 5:** [Làm công việc D...](1.5-week5/)
+**Tuần 5:** [SageMaker nâng cao & MLOps](1.5-week5/)  
+*(13/07 – 19/07)* – Khám phá Feature Store, Pipelines, Model Registry, Clarify và Edge Manager.
 
-**Tuần 6:** [Làm công việc E...](1.6-week6/)
+**Tuần 6:** [CI/CD & Infrastructure as Code](1.6-week6/)  
+*(20/07 – 26/07)* – Triển khai CodePipeline, CloudFormation và AWS CDK cho tự động hóa.
 
-**Tuần 7:** [Làm công việc G...](1.7-week7/)
+**Tuần 7:** [Kiến trúc hướng sự kiện & Điều phối Workflow](1.7-week7/)  
+*(27/07 – 02/08)* – Làm chủ EventBridge, Step Functions, SQS và SNS cho hệ thống AI phản ứng.
 
-**Tuần 8:** [Làm công việc H...](1.8-week8/)
+**Tuần 8:** [Dự án cuối khóa & Tổng hợp](1.8-week8/)  
+*(03/08 – 14/08)* – Xây dựng một ứng dụng AI end‑to‑end, tích hợp các dịch vụ đã học và thuyết trình cuối khóa.
 
-**Tuần 9:** [Làm công việc I...](1.9-week9/)
-
-**Tuần 10:** [Làm công việc L...](1.10-week10/)
-
-**Tuần 11:** [Làm công việc M...](1.11-week11/)
-
-**Tuần 12:** [Làm công việc N...](1.12-week12/)
+---

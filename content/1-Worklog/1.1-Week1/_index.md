@@ -1,57 +1,60 @@
 ---
 title: "Week 1 Worklog"
-date: 2024-01-01
+date: 2026-06-15
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Get acquainted with First Cloud AI Journey team members and understand internship structure
+* Set up AWS environment and master fundamental AWS services
+* Begin Machine Learning Essentials track
+* Understand AI/ML service landscape on AWS
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks Carried Out This Week:
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 1 | - Team introduction and onboarding session <br> - Review internship unit rules and regulations <br> - Access course materials on Cloud Journey platform | 15/06/2026 | 15/06/2026 | [Cloud Journey Platform](https://cloudjourney.awsstudygroup.com/) |
+| 2 | - Create AWS Free Tier account (if not already available) <br> - Set up AWS Budgets for cost management <br> - Configure IAM users and roles with least privilege principles | 16/06/2026 | 16/06/2026 | AWS IAM Documentation |
+| 3 | - **Machine Learning Essentials:** <br>&emsp; + Understand ML lifecycle (data prep → training → evaluation → deployment) <br>&emsp; + Explore AWS AI/ML stack (AI Services, ML Services, ML Frameworks) <br>&emsp; + Learn about SageMaker capabilities and use cases | 17/06/2026 | 17/06/2026 | ML Essentials Module |
+| 4 | - **Amazon SageMaker Immersion Day - Part 1:** <br>&emsp; + SageMaker Studio setup and navigation <br>&emsp; + Built-in algorithms overview <br>&emsp; + Data labeling with Ground Truth | 18/06/2026 | 18/06/2026 | SageMaker Documentation |
+| 5 | - **Amazon SageMaker Immersion Day - Part 2:** <br>&emsp; + Training job configuration and monitoring <br>&emsp; + Hyperparameter tuning <br>&emsp; + Model deployment to endpoints | 19/06/2026 | 19/06/2026 | SageMaker Workshop |
+| 6 | - **Data Lake Fundamentals on AWS:** <br>&emsp; + Understanding Data Lake architecture <br>&emsp; + S3 as data lake storage <br>&emsp; + Glue catalog and ETL jobs | 20/06/2026 | 20/06/2026 | Data Lake Module |
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### ✅ AWS Foundations
+* Successfully created and configured AWS Free Tier account with budget alerts
+* Set up IAM users, groups, and policies following security best practices
+* Understood AWS global infrastructure (Regions, Availability Zones, Edge Locations)
 
-* Successfully created and configured an AWS Free Tier account.
+#### ✅ Machine Learning Essentials
+* Gained understanding of the end-to-end ML workflow on AWS
+* Explored the AWS AI/ML stack:
+  * **AI Services** (pre-trained models): Rekognition, Comprehend, Polly, Translate
+  * **ML Services** (platform): SageMaker, Forecast, Personalize
+  * **ML Frameworks** (tools): TensorFlow, PyTorch, MXNet, scikit-learn
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+#### ✅ Amazon SageMaker Fundamentals
+* **SageMaker Studio:** Launched and configured the integrated development environment
+* **Built-in Algorithms:** Explored options for:
+  - Linear Learner
+  - XGBoost
+  - K-Means
+  - Deep Learning (computer vision, NLP)
+* **Data Labeling:** Created labeling jobs with Ground Truth using both manual and automated labeling
+* **Training:** Configured and monitored training jobs
+* **Hyperparameter Tuning:** Created tuning jobs with specified ranges
+* **Model Deployment:** Successfully deployed trained models to real-time endpoints
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+#### ✅ Data Lake Concepts
+* Learned principles of data lake architecture
+* Created S3 buckets with appropriate lifecycle policies
+* Explored AWS Glue Crawlers and Data Catalog
 
-* Used AWS CLI to perform basic operations such as:
+### Key Learning Outcomes:
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+> **Key Insight:** AWS SageMaker provides a fully managed platform for building, training, and deploying ML models at scale. The integration between data preparation (Glue), training (SageMaker), and deployment creates an end-to-end ML pipeline.

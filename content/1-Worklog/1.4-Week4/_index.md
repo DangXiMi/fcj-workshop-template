@@ -1,57 +1,55 @@
 ---
 title: "Week 4 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-07-06
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 4 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Explore AWS AI services for image, text, and speech analysis
+* Integrate Rekognition, Comprehend, Translate, and Polly into applications
+* Build a multi‑modal AI application
+* Understand security and governance for AI services
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks Carried Out This Week:
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 1 | **Amazon Rekognition:** <br>&emsp; + Image and video analysis <br>&emsp; + Face detection, comparison, and search <br>&emsp; + Custom labels (training) | 06/07/2026 | 06/07/2026 | Rekognition Docs |
+| 2 | **Amazon Comprehend:** <br>&emsp; + Natural language processing (NLP) <br>&emsp; + Entity recognition, key phrases, sentiment <br>&emsp; + Custom classification and entity recognition | 07/07/2026 | 07/07/2026 | Comprehend Docs |
+| 3 | **Amazon Translate & Polly:** <br>&emsp; + Language translation with Translate <br>&emsp; + Text‑to‑speech with Polly (neural voices) <br>&emsp; + Use cases for localization and accessibility | 08/07/2026 | 08/07/2026 | Translate & Polly |
+| 4 | **AWS AI Services Integration Workshop:** <br>&emsp; + Build a serverless application that uses Rekognition, Comprehend, and Translate <br>&emsp; + Process images and text in a pipeline | 09/07/2026 | 09/07/2026 | AI Services Workshop |
+| 5 | **Security and Governance:** <br>&emsp; + IAM policies for AI services <br>&emsp; + AWS Firewall Manager and GuardDuty <br>&emsp; + Data privacy and encryption (KMS) | 10/07/2026 | 10/07/2026 | Security Modules |
+| 6 | **SageMaker with AI Services:** <br>&emsp; + Combine built‑in algorithms with AI services for hybrid solutions <br>&emsp; + Model explainability with SageMaker Clarify | 11/07/2026 | 11/07/2026 | SageMaker Clarify |
 
 ### Week 4 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### ✅ Amazon Rekognition
+* Detected objects, scenes, and faces in images and videos
+* Performed face comparison and matching against a collection
+* Created a custom label model to detect specific objects (e.g., defects)
+* Used Rekognition Video for streaming event analysis
 
-* Successfully created and configured an AWS Free Tier account.
+#### ✅ Amazon Comprehend
+* Extracted entities, key phrases, and sentiment from text
+* Built a custom classifier for product categories
+* Created custom entity recognizer for domain‑specific terms
+* Integrated with S3 and Lambda for automated text analysis
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+#### ✅ Amazon Translate and Polly
+* Translated content between multiple languages using Translate
+* Generated lifelike speech with Polly’s neural voices
+* Used SSML to control pronunciation and prosody
+* Built a multi‑lingual chat support prototype
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+#### ✅ Security & Governance
+* Applied fine‑grained IAM policies for AI services
+* Enabled CloudTrail and GuardDuty for threat detection
+* Encrypted data at rest using KMS for S3 buckets and DynamoDB tables
+* Set up AWS Firewall Manager to protect API Gateway endpoints
 
-* Used AWS CLI to perform basic operations such as:
+### Key Learning Outcomes:
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+> **Key Insight:** AWS AI services offer ready‑to‑use intelligence that can be quickly integrated into applications. They lower the barrier for adding AI capabilities, and when combined with security best practices, they provide a robust foundation for production workloads.

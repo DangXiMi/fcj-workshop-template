@@ -1,59 +1,62 @@
 ---
-title: "Worklog Tuần 5"
-date: 2024-01-01
-weight: 1
+title: "Week 5 Worklog"
+date: 2026-07-13
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 5:
 
-### Mục tiêu tuần 5:
+* Đào sâu các tính năng nâng cao của Amazon SageMaker.
+* Triển khai các thực hành MLOps: Feature Store, Pipelines, Model Registry.
+* Khám phá giải thích model và phát hiện thiên lệch (bias) với Clarify.
+* Tìm hiểu SageMaker Edge Manager và Neo.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Nhiệm vụ thực hiện trong tuần:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 1 | **SageMaker Feature Store:** <br>&emsp; + Tạo feature group <br>&emsp; + Nạp, truy xuất và chia sẻ feature <br>&emsp; + Online store so với Offline store | 13/07/2026 | 13/07/2026 | Feature Store Docs |
+| 2 | **SageMaker Pipelines:** <br>&emsp; + Định nghĩa pipeline ML từ đầu đến cuối <br>&emsp; + Các bước: xử lý, huấn luyện, đánh giá, triển khai <br>&emsp; + Tự động hóa và điều phối pipeline | 14/07/2026 | 14/07/2026 | Pipelines Workshop |
+| 3 | **Model Registry và Triển khai:** <br>&emsp; + Đăng ký model kèm metadata <br>&emsp; + Phê duyệt model để triển khai <br>&emsp; + Triển khai đa giai đoạn (staging, production) <br>&emsp; + Blue/green và canary deployment | 15/07/2026 | 15/07/2026 | Model Registry |
+| 4 | **SageMaker Clarify:** <br>&emsp; + Phát hiện và đo lường thiên lệch (bias) <br>&emsp; + Giải thích model (SHAP) <br>&emsp; + Tạo báo cáo và giám sát | 16/07/2026 | 16/07/2026 | Clarify Docs |
+| 5 | **SageMaker Edge Manager & Neo:** <br>&emsp; + Biên dịch model cho thiết bị biên (edge) <br>&emsp; + Triển khai lên edge với SageMaker Edge Manager <br>&emsp; + Giám sát model trên thiết bị biên | 17/07/2026 | 17/07/2026 | Edge Manager |
+| 6 | **Thực hành: Xây dựng MLOps Pipeline hoàn chỉnh:** <br>&emsp; + Kết hợp Feature Store, Pipelines, Registry và Clarify <br>&emsp; + Tự động hóa retraining và triển khai | 18/07/2026 | 18/07/2026 | MLOps Workshop |
 
+### Thành tựu đạt được Tuần 5:
 
-### Kết quả đạt được tuần 5:
+#### ✅ SageMaker Feature Store
+* Tạo feature group cho huấn luyện và suy luận.
+* Nạp feature lịch sử và theo thời gian thực.
+* Truy xuất feature cho model serving.
+* Hiểu sự khác biệt giữa online store (low‑latency) và offline store (batch).
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### ✅ SageMaker Pipelines
+* Xây dựng pipeline với các bước:
+  - Tiền xử lý (Scikit‑learn / Spark).
+  - Huấn luyện (built‑in hoặc custom algorithm).
+  - Đánh giá (so sánh metric với baseline).
+  - Bước điều kiện để đăng ký model nếu đạt ngưỡng.
+* Lên lịch pipeline với EventBridge.
+* Giám sát pipeline run qua SageMaker Studio.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+#### ✅ Model Registry
+* Đăng ký phiên bản model với metadata tùy chỉnh (độ chính xác, ngày, commit hash).
+* Thiết lập trạng thái phê duyệt (pending, approved, rejected).
+* Triển khai model đã được phê duyệt lên endpoint với alias khác nhau.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+#### ✅ SageMaker Clarify
+* Phân tích dữ liệu huấn luyện để phát hiện bias (trước huấn luyện).
+* Phát hiện bias sau huấn luyện trên các nhóm được bảo vệ.
+* Tạo giải thích SHAP để hiểu lý do dự đoán.
+* Tạo báo cáo phục vụ cho yêu cầu tuân thủ (compliance).
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+#### ✅ Triển khai lên Edge
+* Sử dụng SageMaker Neo để biên dịch model cho thiết bị biên (Raspberry Pi, Jetson Nano).
+* Triển khai model đã biên dịch với SageMaker Edge Manager.
+* Theo dõi trạng thái thiết bị và hiệu suất model trên toàn bộ fleet.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+### Bài học kinh nghiệm chính:
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+> **Điểm nhấn:** MLOps là yếu tố quan trọng đối với ML ở môi trường sản xuất. SageMaker cung cấp bộ công cụ quản lý toàn bộ vòng đời: feature, pipeline, version model, giám sát và giải thích. Điều này giúp đảm bảo quy trình ML có thể tái lập, kiểm toán và mở rộng.

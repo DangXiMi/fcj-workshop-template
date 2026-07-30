@@ -1,59 +1,60 @@
 ---
-title: "Worklog Tuần 7"
-date: 2024-01-01
-weight: 1
+title: "Week 7 Worklog"
+date: 2026-07-27
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 7:
 
-### Mục tiêu tuần 7:
+* Làm chủ kiến trúc hướng sự kiện (event‑driven) cho ứng dụng AI.
+* Sử dụng Amazon EventBridge để định tuyến sự kiện.
+* Xây dựng luồng công việc với AWS Step Functions.
+* Triển khai nhắn tin với SQS và SNS.
+* Tích hợp tất cả thành một ứng dụng AI gắn kết.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Nhiệm vụ thực hiện trong tuần:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 1 | **Amazon EventBridge:** <br>&emsp; + Event bus và rule <br>&emsp; + Event pattern và filter <br>&emsp; + Target (Lambda, Step Functions, SNS) | 27/07/2026 | 27/07/2026 | EventBridge Docs |
+| 2 | **AWS Step Functions:** <br>&emsp; + State machine và workflow <br>&emsp; + Các state: Task, Choice, Parallel, Wait <br>&emsp; + Xử lý lỗi và retry | 28/07/2026 | 28/07/2026 | Step Functions Workshop |
+| 3 | **Điều phối workflow với Step Functions:** <br>&emsp; + Điều phối luồng ML (chuẩn bị dữ liệu, huấn luyện, triển khai) <br>&emsp; + Tích hợp với SageMaker, Lambda, Glue <br>&emsp; + Giám sát và logging | 29/07/2026 | 29/07/2026 | Step Functions ML |
+| 4 | **Nhắn tin với SQS và SNS:** <br>&emsp; + So sánh queue và pub/sub <br>&emsp; + SQS Dead‑Letter Queue và Visibility Timeout <br>&emsp; + SNS Filtering và Fan‑out | 30/07/2026 | 30/07/2026 | SQS/SNS Docs |
+| 5 | **Xử lý sự kiện với SQS và SNS (Book Store Series):** <br>&emsp; + Tách rời microservice cho xử lý đơn hàng <br>&emsp; + Sử dụng SQS cho tác vụ bất đồng bộ (xử lý ảnh) <br>&emsp; + Thông báo cho khách hàng qua SNS | 31/07/2026 | 31/07/2026 | Book Store Series – Phần 6 |
+| 6 | **Xây dựng AI Pipeline hướng sự kiện:** <br>&emsp; + Kết hợp EventBridge, Step Functions, SQS và AI Services <br>&emsp; + Tạo hệ thống xử lý tài liệu với AI enrichment | 01/08/2026 | 01/08/2026 | Document Management Series |
 
+### Thành tựu đạt được Tuần 7:
 
-### Kết quả đạt được tuần 7:
+#### ✅ Amazon EventBridge
+* Tạo custom event bus và định nghĩa schema.
+* Thiết lập rule để định tuyến event theo pattern.
+* Kích hoạt Lambda và Step Functions khi có sự kiện.
+* Tích hợp với SaaS bên thứ ba qua partner event.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### ✅ AWS Step Functions
+* Thiết kế state machine cho điều phối phức tạp:
+  - Xử lý song song nhiều tác vụ.
+  - State Choice để rẽ nhánh có điều kiện.
+  - State Wait để trì hoãn thực thi.
+  - Catch và Retry policy cho khả năng chịu lỗi.
+* Tích hợp với SageMaker cho training và inference.
+* Sử dụng CloudWatch để giám sát execution.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+#### ✅ Dịch vụ nhắn tin
+* Triển khai SQS queue để tách rời và cân bằng tải.
+* Cấu hình Dead‑Letter Queue và cảnh báo khi message tồn đọng.
+* Xuất bản lên SNS topic và đăng ký subscriber qua email, SMS, Lambda.
+* Sử dụng SNS Filtering để gửi message đến đúng subscriber.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+#### ✅ Xử lý tài liệu AI hướng sự kiện
+* Xây dựng pipeline:
+  1. Upload tài liệu lên S3 → EventBridge rule.
+  2. Step Functions bắt đầu: trích xuất văn bản, NLP với Comprehend, dịch với Translate, tóm tắt.
+  3. Kết quả lưu vào S3 và gửi thông báo qua SNS.
+* Sử dụng SQS để xếp hàng các tác vụ xử lý lâu (ví dụ: suy luận ML nặng).
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Bài học kinh nghiệm chính:
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+> **Điểm nhấn:** Kiến trúc hướng sự kiện và điều phối workflow là chìa khóa để xây dựng ứng dụng AI có khả năng mở rộng và phục hồi cao. Step Functions xử lý quản lý trạng thái phức tạp, trong khi SQS/SNS giúp tách rời các thành phần. Kết hợp với AI Services tạo nên hệ thống phản ứng nhanh, thông minh.

@@ -1,59 +1,59 @@
 ---
-title: "Worklog Tuần 3"
-date: 2024-01-01
-weight: 1
+title: "Week 3 Worklog"
+date: 2026-06-29
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 3:
 
-### Mục tiêu tuần 3:
+* Phát triển kỹ năng về phân tích dữ liệu và business intelligence trên AWS.
+* Làm chủ phân tích serverless với Amazon Athena.
+* Hiểu AWS Glue cho ETL và Data Catalog.
+* Tạo bảng điều khiển (dashboard) trực quan với Amazon QuickSight.
+* Khám phá PostgreSQL nâng cao trên AWS.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Nhiệm vụ thực hiện trong tuần:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 1 | **Tổng quan các dịch vụ Data Analytics:** <br>&emsp; + So sánh Athena, Glue, EMR, Redshift, QuickSight <br>&emsp; + Hiểu use case phù hợp cho từng dịch vụ | 29/06/2026 | 29/06/2026 | Analytics Module |
+| 2 | **Phân tích Serverless với Amazon Athena:** <br>&emsp; + Tạo bảng Athena từ dữ liệu trên S3 <br>&emsp; + Viết câu truy vấn SQL trên dữ liệu CSV/Parquet/JSON <br>&emsp; + Phân vùng dữ liệu để tối ưu hiệu năng | 30/06/2026 | 30/06/2026 | Athena Workshop |
+| 3 | **AWS Glue:** <br>&emsp; + Crawler và Data Catalog <br>&emsp; + ETL job với PySpark/Spark <br>&emsp; + Job bookmark và lập lịch | 01/07/2026 | 01/07/2026 | Glue Documentation |
+| 4 | **Business Intelligence với Amazon QuickSight:** <br>&emsp; + Kết nối với Athena và S3 <br>&emsp; + Xây dựng biểu đồ và dashboard <br>&emsp; + Chia sẻ kết quả với các bên liên quan | 02/07/2026 | 02/07/2026 | QuickSight Workshop |
+| 5 | **Advanced PostgreSQL trên AWS – Phần 1:** <br>&emsp; + PostgreSQL managed với Amazon RDS <br>&emsp; + Tinh chỉnh hiệu năng và giám sát <br>&emsp; + Read Replica và Multi‑AZ deployment | 03/07/2026 | 03/07/2026 | PostgreSQL Series |
+| 6 | **Advanced PostgreSQL trên AWS – Phần 2:** <br>&emsp; + Chiến lược migration (DMS) <br>&emsp; + High Availability và Disaster Recovery <br>&emsp; + Extension và Stored Procedure | 04/07/2026 | 04/07/2026 | PostgreSQL Series |
 
+### Thành tựu đạt được Tuần 3:
 
-### Kết quả đạt được tuần 3:
+#### ✅ Nền tảng Data Analytics
+* Hiểu hệ sinh thái analytics của AWS và khi nào nên dùng dịch vụ nào.
+* Tạo truy vấn Athena để phân tích dữ liệu lưu trên S3.
+* Tối ưu truy vấn bằng partitioning và bucketing.
+* Tích hợp Athena với QuickSight cho báo cáo ad‑hoc.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### ✅ AWS Glue ETL
+* Thiết lập Glue Data Catalog bằng cách chạy crawler.
+* Viết ETL job bằng PySpark để biến đổi dữ liệu (lọc, gộp, tổng hợp).
+* Tự động hóa job với trigger và lịch trình.
+* Sử dụng job bookmark để xử lý dữ liệu gia tăng.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+#### ✅ Amazon QuickSight
+* Kết nối Athena làm nguồn dữ liệu.
+* Tạo dashboard tương tác với:
+  - Biểu đồ cột, đường, heat map.
+  - Bộ lọc và tham số cho người dùng tùy chỉnh.
+  - Trường tính toán và hàm tổng hợp.
+* Xuất bản dashboard và chia sẻ với team.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+#### ✅ PostgreSQL trên AWS
+* Khởi chạy RDS PostgreSQL ở môi trường production.
+* Cấu hình Multi‑AZ cho High Availability.
+* Thiết lập Read Replica để scale đọc.
+* Giám sát hiệu năng bằng Performance Insights và CloudWatch.
+* Khám phá các extension phổ biến: `pg_stat_statements`, `postgis`.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Bài học kinh nghiệm chính:
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+> **Điểm nhấn:** Phân tích dữ liệu đóng vai trò then chốt trong các dự án AI, giúp hiểu chất lượng dữ liệu, khám phá xu hướng và theo dõi hiệu suất model. Các công cụ serverless như Athena và Glue cho phép phân tích với chi phí thấp mà không cần quản lý hạ tầng.

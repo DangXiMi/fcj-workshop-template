@@ -1,31 +1,49 @@
 ---
-title: "Blog 3"
+title: "Tự động gửi email cảnh báo với AWS SNS"
 date: 2024-01-01
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
+## Giới thiệu
 
-Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+Một yêu cầu quan trọng của dự án là phải gửi cảnh báo ngay cho giảng viên khi sinh viên bị dự đoán là "High Risk". Thay vì phải kiểm tra database thủ công, mình dùng AWS SNS để gửi email real-time. Trong hệ thống batch prediction, SNS được sử dụng để gửi email tổng hợp sau khi xử lý xong toàn bộ file CSV.
 
-Các điểm chính cần nắm:
+## Amazon SNS là gì?
 
-* Session policy là một IAM policy inline được chỉ định khi tạo hoặc cập nhật Pod Identity association.
-* Quyền hiệu quả = intersection (giao) giữa permissions của IAM role và session policy → session policy chỉ có thể thu hẹp, không thể mở rộng quyền.
-* Giúp tránh tình trạng over-permissioning khi reuse chung một IAM role cho nhiều workloads có nhu cầu khác nhau.
-* Hỗ trợ cả same-account và cross-account (qua IAM role chaining).
-* Giảm đáng kể số lượng IAM roles cần quản lý, tránh chạm giới hạn quota IAM trong cluster lớn.
-* Cấu hình dễ dàng qua AWS Management Console, AWS CLI hoặc AWS SDK khi tạo association giữa Kubernetes ServiceAccount và IAM role.
+SNS là dịch vụ pub/sub messaging của AWS. Nó cho phép bạn gửi thông báo đến nhiều subscriber (email, SMS, HTTP endpoints, hoặc các AWS services khác) một cách tức thời. Mình dùng SNS với giao thức Email để gửi cảnh báo đến giảng viên.
 
-Tính năng này đặc biệt hữu ích khi bạn có nhiều ứng dụng chạy trên cùng một IAM role nhưng cần giới hạn quyền khác nhau (ví dụ: một pod chỉ đọc S3 bucket cụ thể, pod khác chỉ gọi một số API nhất định).
+## Vì sao mình chọn nó?
 
-...Hình ảnh...
+Mình cần một cách đơn giản và đáng tin cậy để gửi email mà không cần phải tự xây dựng hệ thống gửi mail. SNS cung cấp sẵn tính năng này, tích hợp dễ dàng với Lambda, và có free tier 1.000 email mỗi tháng.
 
-...Link...
+## Vấn đề phát sinh
 
-...Hướng dẫn...
+Mình tạo topic và subscription thành công, nhưng không nhận được email nào. Kiểm tra trên console thì thấy status "Pending confirmation".
+
+## Cách giải quyết
+
+SNS yêu cầu xác nhận qua email trước khi gửi thông báo. Mình đã quên click vào link xác nhận trong hộp thư. Sau khi xác nhận, mọi thứ chạy ngon lành.
+
+## Mình đã làm như thế nào?
+
+### Tạo kênh thông báo với SNS
+
+Mình tạo một SNS Topic để làm nơi trung gian nhận các thông báo từ hệ thống. Topic này chịu trách nhiệm phân phối cảnh báo đến các subscriber đã đăng ký.
+
+### Kết nối người nhận thông báo
+
+Mình cấu hình email subscription cho giảng viên. Sau khi đăng ký, email cần được xác nhận trước khi SNS có thể gửi thông báo.
+
+### Cấp quyền cho Lambda gửi thông báo
+
+Mình cấu hình quyền IAM để Lambda có thể publish message lên SNS Topic sau khi hoàn thành quá trình dự đoán.
+
+### Tích hợp SNS vào workflow
+
+Sau khi Lambda xử lý xong dữ liệu và xác định danh sách sinh viên có nguy cơ cao, hệ thống sẽ tạo một thông báo tổng hợp và gửi qua SNS.
+
+### Gửi cảnh báo tự động
+
+SNS nhận message từ Lambda và tự động gửi email đến giảng viên, giúp việc theo dõi sinh viên có nguy cơ không cần thực hiện thủ công.
