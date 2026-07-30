@@ -22,4 +22,4 @@ model/             # ML model artifacts
 ```
 
 
-![S3 bucket structure]( /images/5-Workshop/5.3-Backend-Pipeline/s3-structure.png)
+![S3 bucket structure]( /fcj-workshop-template/images/5-Workshop/5.3-Backend-Pipeline/s3-structure.png)

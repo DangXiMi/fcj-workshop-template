@@ -44,7 +44,7 @@ Bảng điều khiển được tổ chức như một công cụ hỗ trợ ra 
 
 Trước khi khởi tạo SageMaker ML endpoint, bạn có thể sử dụng logic giả lập (mock risk logic) tạm thời để kiểm thử toàn bộ luồng frontend end-to-end; logic này sẽ được thay thế bằng kết quả dự báo thực tế trong phần 5.5.
 
-![Dashboard overview]( /images/5-Workshop/5.4-Frontend-CloudFront/dashboard.png)
+![Dashboard overview]( /fcj-workshop-template/images/5-Workshop/5.4-Frontend-CloudFront/dashboard.png)
 
 #### Chạy ứng dụng ở máy cục bộ
 

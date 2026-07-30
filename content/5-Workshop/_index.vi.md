@@ -25,7 +25,7 @@ Trong workshop này, bạn sẽ tự tay xây dựng hệ thống từ đầu đ
 
 Dự án tuân thủ theo Khung chuẩn Kiến trúc Tối ưu của AWS (AWS Well-Architected Framework), bao hàm toàn bộ các khía cạnh từ kiến trúc, triển khai, tích hợp ML, giám sát, bảo mật, tối ưu chi phí, kiểm thử cho đến dọn dẹp tài nguyên.
 
-{{< figure src="/images/5-Workshop/5.1-Workshop-overview/Solution_Archi.jpg" width="800" >}}
+{{< figure src="/fcj-workshop-template/images/2-Proposal/architecture.jpg" width="800" >}}
 
 #### Nội dung
 

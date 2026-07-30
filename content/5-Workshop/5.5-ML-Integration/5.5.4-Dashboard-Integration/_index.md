@@ -21,6 +21,6 @@ const merged = students.map((s) => {
 
 The dashboard now shows real ML risk levels and probabilities, the Add-Student form runs a live prediction, and the Predict page runs on-demand inference.
 
-![Dashboard with real predictions]( /images/5-Workshop/5.5-ML/dashboard-predictions.png)
+![Dashboard with real predictions]( /fcj-workshop-template/images/5-Workshop/5.5-ML/dashboard-predictions.png)
 
 Rebuild and redeploy the frontend, then invalidate the CloudFront cache (section 5.4.2).

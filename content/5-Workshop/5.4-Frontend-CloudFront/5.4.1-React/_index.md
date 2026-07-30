@@ -44,7 +44,7 @@ The dashboard is organized as a decision-support tool:
 
 Before the ML endpoint exists, you can use temporary mock risk logic so the full frontend flow can be tested end-to-end; it is replaced by real predictions in section 5.5.
 
-![Dashboard overview]( /images/5-Workshop/5.4-Frontend-CloudFront/dashboard.png)
+![Dashboard overview]( /fcj-workshop-template/images/5-Workshop/5.4-Frontend-CloudFront/dashboard.png)
 
 #### Run locally
 

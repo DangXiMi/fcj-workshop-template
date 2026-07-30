@@ -237,6 +237,6 @@ Attending the **FCAJ Community Day - June 2026** was a comprehensive deep-dive i
 - **Building AI products** for enterprises requires patience and close collaboration with customers
 
 #### Some event photos
-![Speaker presentation](/images/3-Event/Event3/event3.png)
+![Speaker presentation](/fcj-workshop-template/images/3-Event/Event3/event3.png)
 
 

@@ -20,4 +20,4 @@ Steps for each table:
 3. Capacity mode: **On-demand**.
 4. Create.
 
-![DynamoDB tables]( /images/5-Workshop/5.3-Backend-Pipeline/dynamodb-tables.png)
+![DynamoDB tables]( /fcj-workshop-template/images/5-Workshop/5.3-Backend-Pipeline/dynamodb-tables.png)

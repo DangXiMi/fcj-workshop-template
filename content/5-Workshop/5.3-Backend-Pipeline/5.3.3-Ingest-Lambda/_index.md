@@ -72,7 +72,7 @@ The dataset has ~3,000 rows. Under **Configuration → General configuration**, 
 4. Prefix: `raw-data/`.
 5. Acknowledge and **Add**.
 
-![S3 trigger]( /images/5-Workshop/5.3-Backend-Pipeline/s3-trigger.png)
+![S3 trigger]( /fcj-workshop-template/images/5-Workshop/5.3-Backend-Pipeline/s3-trigger.png)
 
 #### Test end-to-end
 
@@ -81,4 +81,4 @@ Upload `student_performance.csv` into `raw-data/`. Then verify:
 - **CloudWatch Logs** show `Dataset processed successfully`.
 - **DynamoDB → student_records** contains the records.
 
-![CloudWatch logs success]( /images/5-Workshop/5.3-Backend-Pipeline/cloudwatch-ingest.png)
+![CloudWatch logs success]( /fcj-workshop-template/images/5-Workshop/5.3-Backend-Pipeline/cloudwatch-ingest.png)

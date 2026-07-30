@@ -16,4 +16,4 @@ A "publish succeeded" log does not guarantee delivery. SNS only emails **confirm
 
 Test with **Publish message**, then test end-to-end by uploading a batch that contains high-risk students and confirming the summary email arrives.
 
-![SNS alert email]( /images/5-Workshop/5.6-Monitoring/sns-email.png)
+![SNS alert email]( /fcj-workshop-template/images/5-Workshop/5.6-Monitoring/sns-email.png)

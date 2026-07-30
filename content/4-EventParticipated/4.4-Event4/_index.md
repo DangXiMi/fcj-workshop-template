@@ -251,5 +251,5 @@ Attending the **FCAJ x Agentic AI Build Week** hackathon was an incredibly valua
 - Speed matters: build quickly, test, learn, and iterate
 
 #### Some event photos
-![Speaker presentation](/images/3-Event/Event4/AI_Agent_Build.png)
+![Speaker presentation](/fcj-workshop-template/images/3-Event/Event4/AI_Agent_Build.png)
 

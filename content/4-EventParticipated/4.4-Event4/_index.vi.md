@@ -251,4 +251,4 @@ Tham dự hackathon **FCAJ x Agentic AI Build Week** là một trải nghiệm v
 - Tốc độ quan trọng: xây dựng nhanh, kiểm tra, học hỏi và lặp lại
 
 #### Hình ảnh sự kiện
-![Speaker presentation](/images/3-Event/Event4/AI_Agent_Build.png)
+![Speaker presentation](/fcj-workshop-template/images/3-Event/Event4/AI_Agent_Build.png)

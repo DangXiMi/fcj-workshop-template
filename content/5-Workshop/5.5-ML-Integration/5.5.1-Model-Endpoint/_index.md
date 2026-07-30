@@ -18,7 +18,7 @@ y = df["at_risk"]
 
 Capture the accuracy and classification report screenshots as evidence of ML integration.
 
-![Model accuracy]( /images/5-Workshop/5.5-ML/accuracy.png)
+![Model accuracy]( /fcj-workshop-template/images/5-Workshop/5.5-ML/accuracy.png)
 
 #### Deploy the SageMaker endpoint
 
@@ -30,4 +30,4 @@ A SageMaker endpoint runs on a backing instance **24/7 and is billed continuousl
 
 Verify the endpoint status is **InService**.
 
-![SageMaker endpoint]( /images/5-Workshop/5.5-ML/endpoint.png)
+![SageMaker endpoint]( /fcj-workshop-template/images/5-Workshop/5.5-ML/endpoint.png)

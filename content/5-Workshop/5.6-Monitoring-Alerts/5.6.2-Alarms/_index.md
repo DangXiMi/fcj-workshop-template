@@ -23,4 +23,4 @@ Steps:
 
 Trigger a deliberate error (e.g. malformed `POST /predict`) to move the alarm to **In alarm** and confirm the email. 
 
-![CloudWatch alarm]( /images/5-Workshop/5.6-Monitoring/alarm.png)
+![CloudWatch alarm]( /fcj-workshop-template/images/5-Workshop/5.6-Monitoring/alarm.png)

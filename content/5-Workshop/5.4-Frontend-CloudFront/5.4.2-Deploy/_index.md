@@ -30,7 +30,7 @@ Enable **Static website hosting** on the bucket (index document `index.html`) an
 4. Viewer protocol policy: **Redirect HTTP to HTTPS**.
 5. Default root object: `index.html`.
 
-![CloudFront distribution]( /images/5-Workshop/5.4-Frontend-CloudFront/cloudfront.png)
+![CloudFront distribution]( /fcj-workshop-template/images/5-Workshop/5.4-Frontend-CloudFront/cloudfront.png)
 
 #### SPA routing (important)
 

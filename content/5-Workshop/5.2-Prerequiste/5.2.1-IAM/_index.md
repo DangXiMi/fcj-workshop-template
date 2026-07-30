@@ -22,13 +22,13 @@ Do not use the root account for daily development. Create a dedicated IAM user a
    - `AmazonSNSFullAccess`
    - `AmazonSageMakerFullAccess`
 
-![IAM user creation](/images/5-Workshop/5.2-Prerequisite/iam-user.png)
+![IAM user creation]( /fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam-user.png)
 
 #### Enable MFA
 
 Under **Security credentials → Multi-factor authentication (MFA)**, register an authenticator app (Google Authenticator / Authy). This secures the console login and improves the Security score of the project.
 
-![Enable MFA]( /images/5-Workshop/5.2-Prerequisite/mfa.png)
+![Enable MFA]( /fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/mfa.png)
 
 #### Create Access Keys for the CLI
 
@@ -55,4 +55,4 @@ Lambda functions must not use hard-coded credentials. They assume an **execution
 The role **must** trust `lambda.amazonaws.com`. If you create a role for a different service, it will not appear in the Lambda "existing role" dropdown.
 {{% /notice %}}
 
-![Lambda role trust relationship]( /images/5-Workshop/5.2-Prerequisite/lambda-role.png)
+![Lambda role trust relationship]( /fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/lambda-role.png)

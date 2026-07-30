@@ -61,7 +61,9 @@ Amazon SNS                                       →  High-risk email alerts
 Amazon CloudWatch                                →  Logs, metrics, alarms
 ```
 
-{{< figure src="/images/5-Workshop/5.1-Workshop-overview/Solution_Archi.jpg" width="800" >}}
+{{< figure src="/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/Solution_Archi.jpg" width="800" >}}
+
+
 #### AWS Services Used
 
 - **Amazon S3**: Stores the dataset, prediction input, model artifacts, and the frontend build.

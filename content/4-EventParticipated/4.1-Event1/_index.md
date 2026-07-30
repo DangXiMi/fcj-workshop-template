@@ -171,5 +171,5 @@ Attending the **FCAJ Community Day – Data & DevOps Insights** provided a pract
 - DevOps is a fascinating field that requires both broad knowledge and deep specialization—I need to start building my toolkit
 
 #### Some event photos
-![Speaker presentation](/images/3-Event/Event1/event.jpeg)
+![Speaker presentation](/fcj-workshop-template/images/3-Event/Event1/event.jpeg)
 

@@ -25,7 +25,7 @@ In this workshop, you will build the system end-to-end using AWS serverless and 
 
 The project follows the AWS Well-Architected Framework and covers architecture, deployment, ML integration, monitoring, security, cost optimization, testing, and cleanup.
 
-{{< figure src="/images/5-Workshop/5.1-Workshop-overview/Solution_Archi.jpg" width="800" >}}
+{{< figure src="/fcj-workshop-template/images/2-Proposal/architecture.jpg" width="800" >}}
 
 #### Content
 

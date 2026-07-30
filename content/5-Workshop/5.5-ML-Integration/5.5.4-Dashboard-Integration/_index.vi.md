@@ -21,6 +21,6 @@ const merged = students.map((s) => {
 
 Bảng điều khiển giờ đây hiển thị mức độ nguy cơ và xác suất rủi ro thực tế từ mô hình ML; biểu mẫu Thêm Sinh viên (Add-Student) sẽ chạy dự báo trực tiếp, và trang Dự báo (Predict page) sẽ thực hiện suy luận theo yêu cầu (on-demand inference).
 
-![Dashboard with real predictions]( /images/5-Workshop/5.5-ML/dashboard-predictions.png)
+![Dashboard with real predictions]( /fcj-workshop-template/images/5-Workshop/5.5-ML/dashboard-predictions.png)
 
 Tiến hành đóng gói và triển khai lại ứng dụng frontend, sau đó làm mới bộ nhớ đệm (invalidate cache) trên CloudFront (xem phần 5.4.2).

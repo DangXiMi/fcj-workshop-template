@@ -236,4 +236,4 @@ Tham dự **FCAJ Community Day - June 2026** là một chuyến tham quan sâu r
 - **Xây dựng sản phẩm AI** cho doanh nghiệp đòi hỏi kiên nhẫn và cộng tác chặt chẽ với khách hàng
 
 #### Hình ảnh sự kiện
-![Speaker presentation](/images/3-Event/Event3/event3.png)
+![Speaker presentation](/fcj-workshop-template/images/3-Event/Event3/event3.png)

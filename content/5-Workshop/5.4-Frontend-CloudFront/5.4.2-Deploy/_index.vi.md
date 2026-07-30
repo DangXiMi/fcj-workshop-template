@@ -30,7 +30,7 @@ Bật tính năng **Static website hosting** trên S3 bucket (tệp chỉ mục 
 4. Viewer protocol policy: **Redirect HTTP to HTTPS**.
 5. Default root object: `index.html`.
 
-![CloudFront distribution]( /images/5-Workshop/5.4-Frontend-CloudFront/cloudfront.png)
+![CloudFront distribution]( /fcj-workshop-template/images/5-Workshop/5.4-Frontend-CloudFront/cloudfront.png)
 
 #### Đấu nối tuyến đường SPA (SPA routing - quan trọng)
 

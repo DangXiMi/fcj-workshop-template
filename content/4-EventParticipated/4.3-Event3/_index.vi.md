@@ -240,4 +240,4 @@ Tham dự chuyến tham quan học tập **AWS: Enterprise Cloud Architectures a
 - Thị trường lao động cạnh tranh, nhưng kiên trì và học tập liên tục sẽ có kết quả
 
 #### Hình ảnh sự kiện
-![Speaker presentation](/images/3-Event/Event2/Swinburne_Cloud_Mastery_2026.png)
+![Speaker presentation](/fcj-workshop-template/images/3-Event/Event2/Swinburne_Cloud_Mastery_2026.png)

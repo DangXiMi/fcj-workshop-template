@@ -45,4 +45,4 @@ POST /dev/predict
 ```
 
 
-![On-demand prediction]( /images/5-Workshop/5.5-ML/ondemand-predict.png)
+![On-demand prediction]( /fcj-workshop-template/images/5-Workshop/5.5-ML/ondemand-predict.png)

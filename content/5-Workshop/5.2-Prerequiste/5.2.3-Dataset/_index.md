@@ -41,4 +41,4 @@ student-warning-system/
 └── requirements.txt
 ```
 
-![Dataset in S3]( /images/5-Workshop/5.2-Prerequisite/dataset-s3.png)
+![Dataset in S3]( /fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/dataset-s3.png)

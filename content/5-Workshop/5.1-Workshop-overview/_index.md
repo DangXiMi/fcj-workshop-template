@@ -53,7 +53,7 @@ Amazon CloudWatch                     →  Logs, metrics, alarms
 
 The workshop uses a dataset of ~3,000 student records containing academic and behavioral features (attendance, assignment and exam scores, class participation, homework submission, digital learning hours, extracurricular participation, and a behavioral engagement score) with a binary `at_risk` label used as the prediction target.
 
-![Dataset preview](/images/5-Workshop/5.1-Workshop-overview/dataset-preview.png)
+![Dataset preview]( /fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/dataset-preview.png)
 
 #### Region
 

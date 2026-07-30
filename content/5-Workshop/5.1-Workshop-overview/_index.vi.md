@@ -53,7 +53,7 @@ Amazon CloudWatch                     →  Nhật ký (logs), chỉ số (metric
 
 Workshop sử dụng tập dữ liệu gồm ~3.000 hồ sơ sinh viên chứa các đặc trưng về học tập và hành vi (chuyên cần, điểm bài tập và điểm thi, mức độ tham gia lớp học, nộp bài về nhà, số giờ học trực tuyến, hoạt động ngoại khóa và điểm tương tác hành vi) cùng với nhãn nhị phân `at_risk` được sử dụng làm mục tiêu dự báo.
 
-![Dataset preview](/images/5-Workshop/5.1-Workshop-overview/dataset-preview.png)
+![Dataset preview]( /fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/dataset-preview.png)
 
 #### Vùng (Region)
 

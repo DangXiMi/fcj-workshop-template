@@ -45,4 +45,4 @@ Upload a small CSV, then confirm:
 - DynamoDB `prediction_results` contains items with `prediction` and `probability`.
 - An SNS email arrives if high-risk students were found.
 
-![Prediction results in DynamoDB]( /images/5-Workshop/5.5-ML/prediction-results.png)
+![Prediction results in DynamoDB]( /fcj-workshop-template/images/5-Workshop/5.5-ML/prediction-results.png)

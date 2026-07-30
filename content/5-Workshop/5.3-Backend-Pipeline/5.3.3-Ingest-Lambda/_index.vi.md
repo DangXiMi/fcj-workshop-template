@@ -72,7 +72,7 @@ Tập dữ liệu có ~3.000 dòng. Tại mục **Configuration → General conf
 4. Tiền tố (Prefix): `raw-data/`.
 5. Xác nhận và chọn **Add**.
 
-![S3 trigger]( /images/5-Workshop/5.3-Backend-Pipeline/s3-trigger.png)
+![S3 trigger]( /fcj-workshop-template/images/5-Workshop/5.3-Backend-Pipeline/s3-trigger.png)
 
 #### Kiểm thử end-to-end
 
@@ -81,4 +81,4 @@ Tải tệp `student_performance.csv` vào thư mục `raw-data/`. Sau đó ki�
 - **CloudWatch Logs** hiển thị `Dataset processed successfully`.
 - **DynamoDB → student_records** đã nạp đầy đủ các bản ghi.
 
-![CloudWatch logs success]( /images/5-Workshop/5.3-Backend-Pipeline/cloudwatch-ingest.png)
+![CloudWatch logs success]( /fcj-workshop-template/images/5-Workshop/5.3-Backend-Pipeline/cloudwatch-ingest.png)

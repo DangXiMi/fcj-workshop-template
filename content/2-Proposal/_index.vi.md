@@ -61,7 +61,7 @@ Amazon SNS                                       →  Cảnh báo rủi ro cao q
 Amazon CloudWatch                                →  Logs, metrics, alarms
 ```
 
-{{< figure src="/images/5-Workshop/5.1-Workshop-overview/Solution_Archi.jpg" width="800" >}}
+{{< figure src="/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/Solution_Archi.jpg" width="800" >}}
 
 #### Các dịch vụ AWS được sử dụng
 

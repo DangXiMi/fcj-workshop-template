@@ -242,4 +242,4 @@ Attending the **AWS: Enterprise Cloud Architectures and Industry Application** s
 - The job market is competitive, but persistence and continuous learning will pay off
 
 #### Some event photos
-![Speaker presentation](/images/3-Event/Event2/Swinburne_Cloud_Mastery_2026.png)
+![Speaker presentation](/fcj-workshop-template/images/3-Event/Event2/Swinburne_Cloud_Mastery_2026.png)

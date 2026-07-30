@@ -23,4 +23,4 @@ Các bước thực hiện:
 
 Tạo một lỗi cố ý (ví dụ: gửi dữ liệu sai định dạng đến `POST /predict`) để chuyển trạng thái cảnh báo sang **In alarm** và xác nhận email đã được gửi.
 
-![CloudWatch alarm]( /images/5-Workshop/5.6-Monitoring/alarm.png)
+![CloudWatch alarm]( /fcj-workshop-template/images/5-Workshop/5.6-Monitoring/alarm.png)

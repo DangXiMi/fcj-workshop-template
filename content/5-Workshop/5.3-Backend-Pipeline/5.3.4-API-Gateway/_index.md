@@ -71,4 +71,4 @@ curl -i https://<api-id>.execute-api.ap-southeast-1.amazonaws.com/dev/students
 
 Expected: `200 OK`, a JSON array, and `Access-Control-Allow-Origin: *` in the headers.
 
-![API test 200 OK]( /images/5-Workshop/5.3-Backend-Pipeline/api-test.png)
+![API test 200 OK]( /fcj-workshop-template/images/5-Workshop/5.3-Backend-Pipeline/api-test.png)

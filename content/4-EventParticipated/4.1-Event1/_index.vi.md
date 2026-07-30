@@ -169,5 +169,5 @@ Tham dự **FCAJ Community Day – Data & DevOps Insights** mang đến cái nh�
 - DevOps là một lĩnh vực thú vị đòi hỏi cả kiến thức rộng và chuyên môn sâu—tôi cần bắt đầu xây dựng bộ công cụ của mình
 
 #### Hình ảnh sự kiện
-![Speaker presentation](/images/3-Event/Event1/event.jpeg)
+![Speaker presentation](/fcj-workshop-template/images/3-Event/Event1/event.jpeg)
 

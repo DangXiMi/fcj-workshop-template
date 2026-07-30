@@ -16,4 +16,4 @@ Nhật ký "publish succeeded" không đảm bảo tin nhắn đã được chuy
 
 Kiểm thử bằng tính năng **Publish message**, sau đó kiểm thử toàn trình (end-to-end) bằng cách tải lên một đợt dữ liệu có chứa sinh viên thuộc nhóm nguy cơ cao và xác nhận email tổng hợp đã gửi về hộp thư.
 
-![SNS alert email]( /images/5-Workshop/5.6-Monitoring/sns-email.png)
+![SNS alert email]( /fcj-workshop-template/images/5-Workshop/5.6-Monitoring/sns-email.png)

@@ -22,13 +22,13 @@ Không sử dụng tài khoản Root cho các hoạt động phát triển hàng
    - `AmazonSNSFullAccess`
    - `AmazonSageMakerFullAccess`
 
-![IAM user creation]( /images/5-Workshop/5.2-Prerequisite/iam-user.png)
+![IAM user creation]( /fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam-user.png)
 
 #### Bật MFA (Xác thực hai yếu tố)
 
 Tại mục **Security credentials → Multi-factor authentication (MFA)**, hãy đăng ký một ứng dụng xác thực (Google Authenticator / Authy). Điều này giúp bảo mật việc đăng nhập console và nâng cao điểm Bảo mật (Security score) cho dự án.
 
-![Enable MFA]( /images/5-Workshop/5.2-Prerequisite/mfa.png)
+![Enable MFA]( /fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/mfa.png)
 
 #### Tạo Access Key cho CLI
 
@@ -55,4 +55,4 @@ Các hàm Lambda không được sử dụng thông tin đăng nhập viết c�
 Role **bắt buộc** phải tin cậy `lambda.amazonaws.com`. Nếu bạn tạo role cho một dịch vụ khác, nó sẽ không xuất hiện trong danh sách thả xuống "existing role" của Lambda.
 {{% /notice %}}
 
-![Lambda role trust relationship]( /images/5-Workshop/5.2-Prerequisite/lambda-role.png)
+![Lambda role trust relationship]( /fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/lambda-role.png)

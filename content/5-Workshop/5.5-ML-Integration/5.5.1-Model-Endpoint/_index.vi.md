@@ -18,7 +18,7 @@ y = df["at_risk"]
 
 Chụp lại màn hình kết quả độ chính xác và báo cáo phân loại (classification report) để làm bằng chứng chứng minh việc tích hợp Machine Learning.
 
-![Model accuracy]( /images/5-Workshop/5.5-ML/accuracy.png)
+![Model accuracy]( /fcj-workshop-template/images/5-Workshop/5.5-ML/accuracy.png)
 
 #### Triển khai SageMaker endpoint
 
@@ -30,4 +30,4 @@ Một SageMaker endpoint chạy trên một hạ tầng máy chủ cơ sở **24
 
 Kiểm tra trạng thái của endpoint để đảm bảo đã chuyển sang trạng thái **InService**.
 
-![SageMaker endpoint]( /images/5-Workshop/5.5-ML/endpoint.png)
+![SageMaker endpoint]( /fcj-workshop-template/images/5-Workshop/5.5-ML/endpoint.png)

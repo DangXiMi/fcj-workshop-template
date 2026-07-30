@@ -20,4 +20,4 @@ Các bước thực hiện cho từng bảng:
 3. Chế độ dung lượng (Capacity mode): **On-demand**.
 4. Chọn **Create table**.
 
-![DynamoDB tables]( /images/5-Workshop/5.3-Backend-Pipeline/dynamodb-tables.png)
+![DynamoDB tables]( /fcj-workshop-template/images/5-Workshop/5.3-Backend-Pipeline/dynamodb-tables.png)

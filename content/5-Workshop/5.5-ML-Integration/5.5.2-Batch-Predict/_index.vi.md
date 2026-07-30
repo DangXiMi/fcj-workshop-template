@@ -45,4 +45,4 @@ Tải lên một tệp CSV nhỏ, sau đó xác nhận:
 - Bảng `prediction_results` trong DynamoDB chứa các đối tượng có thuộc tính `prediction` và `probability`.
 - Nhận được email cảnh báo từ SNS nếu phát hiện sinh viên có nguy cơ cao.
 
-![Prediction results in DynamoDB]( /images/5-Workshop/5.5-ML/prediction-results.png)
+![Prediction results in DynamoDB]( /fcj-workshop-template/images/5-Workshop/5.5-ML/prediction-results.png)
